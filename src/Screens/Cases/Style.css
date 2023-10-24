@@ -1,0 +1,56 @@
+/*Style.css */
+
+/* Style for Form 1 */
+.form1-container {
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 100px;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Style for Form 2 */
+  .form2-container {
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Additional styles for form containers (adjust margins as needed) */
+  .form-container {
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the button */
+  .custom-button {
+    background-color: #c99f4a;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /* Style for rounded input fields */
+  input[type="text"],
+  input[type="date"],
+  select {
+    /* font-size: 10px; */
+    border: 6px solid #ccc;
+    border-radius: 10px; /* Add border radius for rounded edges */
+    padding: 8px;
+    width: 100%; 
+    margin: 5px 0;
+  }
+
+  
+/* Increase the size of the date input when hovering */
+input[type="date"]:hover { 
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */ 
+}
+  
