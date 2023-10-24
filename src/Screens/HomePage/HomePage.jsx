@@ -1,9 +1,12 @@
-import React from 'react'
+import { Hero1, Hero2 } from "../../Components/Homepage/index";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <Hero1 />
+      <Hero2 />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
