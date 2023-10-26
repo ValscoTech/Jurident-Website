@@ -9,7 +9,7 @@ const LoginInfo = () => {
   const [currIndex, setIndex] = React.useState(0);
   React.useEffect(() => {
     setInterval(() => {
-      if (currIndex == imgShow.length - 1) {
+      if (currIndex === imgShow.length - 1) {
         setIndex(0);
       } else {
         setIndex(currIndex + 1);

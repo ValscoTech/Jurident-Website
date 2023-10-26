@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 // import { GiRocketThruster } from "react-icons/gi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
-import log from "../../assets/new jd 2.png";
+import log from "../../Assets/Login/Login-1.png";
 import { UserContext } from "../../context/user.context";
 import { signOutUser } from "../../utils/firebase.utils";
 import ModeBtn from "../DarkMode_Btn/Mode_btn";
@@ -24,7 +24,7 @@ function Navbar() {
         <nav className="navbar bg-slate-50 dark:bg-[#060125]">
           <div className="navbar-container ">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img src={log} className="navbar-icon" />
+              <img src={log} alt="icon" className="navbar-icon" />
               JURIDENT
             </Link>
             <div className="menu-icon" onClick={handleClick}>

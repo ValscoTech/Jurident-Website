@@ -1,16 +1,17 @@
 import React from "react";
 
 import "./Register.css";
-import RegistrationForm from "../../../components/Register/RegistrationForm";
-import RegistrationInfo from "../../../components/Register/RegistrationInfo";
+import RegistrationForm from "../../../Components/Register/RegistrationForm";
+import RegistrationInfo from "../../../Components/Register/RegistrationInfo";
 
-const Login = () => {
+
+const Register = () => {
   return (
     <div id="main">
-      <RegistrationForm></RegistrationForm>
-      <RegistrationInfo></RegistrationInfo>
+     <RegistrationForm/>
+     <RegistrationInfo/>
     </div>
   );
 };
 
-export default Login;
+export default Register;
