@@ -10,6 +10,7 @@ const Case5 = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ [name]: value });
+
   };
 
   // Function to handle form submission
@@ -36,7 +37,7 @@ const Case5 = () => {
           <br /> <b>Court Name</b> <br /> <br />
           <select name="CourtName1">
             <option value="court0">Select Court Name</option> 
-            <option value="court1">Select Court Name1</option>
+            <option value="court1">Select Court Name1</option> 
             <option value="court2">Select Court Name2</option>
             <option value="court2">Select Court Name3</option>
             <option value="court2">Select Court Name4</option>
