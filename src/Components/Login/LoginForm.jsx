@@ -69,96 +69,86 @@ const LoginForm = () => {
         <meta name="description" content="Jurident Login Page" />
       </Helmet>
 
-      <div id="form">
-        <div className="w-full max-w-xs">
-          <form
-            className="px-8 pb-8 mb-4 login dark:text-white"
-            onSubmit={handleSubmit}
+      <form id="form" className="w-1/3 m-auto gap-8" onSubmit={handleSubmit}>
+        <h3 id="login-intro" className="mb-8">Log into your account</h3>
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
+            for="email"
           >
-            <h3 id="login-intro" className="mb-8">
-              Log into your account
-            </h3>
-            <br />
-            <div className="mb-4">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
-                for="email"
-              >
-                Email
-              </label>
-              <input
-                className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="username"
-                type="text"
-                placeholder="johndoe@gmail.com"
-                onChange={handleChange}
-                name="email"
-                value={email}
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
-                for="password"
-              >
-                Password
-              </label>
-              <input
-                className="border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                id="password"
-                type="password"
-                placeholder="* * * * *"
-                onChange={handleChange}
-                name="password"
-                value={password}
-              />
-
-              <div id="rememberMe">
-                <input
-                  className="border rounded"
-                  type="checkbox"
-                  id="rememberMe"
-                />
-                <div id="rememberText">
-                  <p id="rememberMain">Remember Me</p>
-                  <p id="rememberSub">Save my login details for next time</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <input
-                className="login-btn dark:bg-[#C99F4A] dark:text-black"
-                type="submit"
-                value={"Log In"}
-              />
-            </div>
-            <div id="seperator">
-              <div className="h-1 w-50 bg-black dark:bg-white mt-[18px] mr-[15px]"></div>{" "}
-              or{" "}
-              <div className="h-1 w-50 bg-black dark:bg-white mt-[18px] ml-[15px]"></div>
-            </div>
-            <div id="signup-option">
-              Don't have an account?{" "}
-              <Link to={"/register"} id="signup">
-                Sign Up
-              </Link>
-            </div>
-            <button
-              className="googleLog bg-slate-50 dark:text-black flex items-center justify-center gap-3"
-              onClick={signInWithGoogle}
-            >
-              <FcGoogle /> <span>Continue with Google</span>
-            </button>
-            <button
-              className="facebookLog flex items-center justify-center gap-3"
-              onClick={signInWithFB}
-            >
-              <RiFacebookCircleFill />
-              <span>Continue with Facebook</span>
-            </button>
-          </form>
+            Email
+          </label>
+          <input
+            className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username"
+            type="text"
+            placeholder="johndoe@gmail.com"
+            onChange={handleChange}
+            name="email"
+            value={email}
+          />
         </div>
-      </div>
+        <div className="mb-6">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            className="border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            id="password"
+            type="password"
+            placeholder="* * * * *"
+            onChange={handleChange}
+            name="password"
+            value={password}
+          />
+
+          <div id="rememberMe">
+            <input
+              className="border rounded"
+              type="checkbox"
+              id="rememberMe"
+            />
+            <div id="rememberText">
+              <p id="rememberMain">Remember Me</p>
+              <p id="rememberSub">Save my login details for next time</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center justify-between">
+          <input
+            className="login-btn dark:bg-[#C99F4A] dark:text-black"
+            type="submit"
+            value={"Log In"}
+          />
+        </div>
+        <div id="seperator">
+          <div className="h-1 w-1/2 bg-black dark:bg-white mt-[12px] mr-[15px]"></div>
+          or
+          <div className="h-1 w-1/2 bg-black dark:bg-white mt-[12px] ml-[15px]"></div>
+        </div>
+        <div id="signup-option">
+          Don't have an account?{" "}
+          <Link to={"/register"} id="signup">
+            Sign Up
+          </Link>
+        </div>
+        <button
+          className="googleLog bg-slate-50 dark:text-black flex items-center justify-center gap-3"
+          onClick={signInWithGoogle}
+        >
+          <FcGoogle /> <span>Continue with Google</span>
+        </button>
+        <button
+          className="facebookLog flex items-center justify-center gap-3"
+          onClick={signInWithFB}
+        >
+          <RiFacebookCircleFill />
+          <span>Continue with Facebook</span>
+        </button>
+      </form>
     </>
   );
 };

@@ -28,7 +28,7 @@ const SecondPage = () => {
           <div className="flex flex-col justify-center gap-11 pb-11">
             <div className="flex text-xl font-semibold  max-md:justify-centre text-gray-800  text-left max-md:text-lg max-md:font-normal">
               <TiTick className=" text-lg inline-block mt-1 mr-2 text-white bg-green-400 rounded-full break-words " />
-              <p className=" w-[500px] max-md:w-auto">
+              <p className=" w-[500px] max-md:w-auto dark:text-white">
                 {" "}
                 <span className=" text-yellow-500">Case Management</span> - keep
                 all of your case details and documents in one location.
@@ -36,7 +36,7 @@ const SecondPage = () => {
             </div>
             <div className="flex text-xl font-semibold max-md:justify-centre text-gray-800 text-left max-md:text-lg max-md:font-normal">
               <TiTick className=" text-lg inline-block mt-1 text-white bg-green-400 rounded-full  mr-2" />
-              <p className="w-[500px] max-md:w-auto">
+              <p className="w-[500px] max-md:w-auto dark:text-white">
                 {" "}
                 <span className=" text-yellow-500">Calendering</span> - Remember
                 to hit every Deadline
@@ -44,7 +44,7 @@ const SecondPage = () => {
             </div>
             <div className="flex text-xl font-semibold max-md:justify-centre text-gray-800 text-left max-md:text-lg max-md:font-normal">
               <TiTick className=" text-lg inline-block mt-1 text-white bg-green-400 rounded-full  mr-2" />
-              <p className="w-[500px] max-md:w-auto">
+              <p className="w-[500px] max-md:w-auto dark:text-white">
                 {" "}
                 <span className=" text-yellow-500">Secure</span> - Every byte of
                 data - yours and your clients' - securely stored.
