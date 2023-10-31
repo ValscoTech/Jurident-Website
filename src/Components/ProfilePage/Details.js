@@ -46,7 +46,7 @@ const Details=()=>{
                   <h1>Hint</h1>
                 </div>
                 <div className='w-full h-[100px]  '>
-                  <h1>LAWYER Degree</h1>
+                  <h1>LAWYER DEGREE</h1>
                   <div>
                     <Select
                     placeholder='select degree...'
@@ -60,12 +60,12 @@ const Details=()=>{
                   <h1>Hint</h1>
                 </div>
                 <div className='w-full h-[100px] '>
-                  <h1>Email</h1>
+                  <h1>EMAIL</h1>
                   <input className=" w-full h-[40px]  rounded-lg border-solid border-orange-300 border-2 outline-none pl-[20px] " placeholder="email"></input>
                   <h1>Hint</h1>
                 </div>
                 <div className='w-full h-[100px]  '>
-                  <h1>Phone Number</h1>
+                  <h1>PHONE NUMBER</h1>
                   <input className=" w-full h-[40px]  rounded-lg border-solid border-orange-300 border-2 outline-none pl-[20px] " placeholder="phone"></input>
                   <h1>Hint</h1>
                 </div>
