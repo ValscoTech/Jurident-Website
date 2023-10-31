@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 
 function TermsAndCondition() {
   return (
+    <div className="md:mx-[260px] mx-[25px] ">
     <div className=" flex flex-col md:flex-row gap-12 ">
     <Profile/>
     <div className=" md:w-[650px] md:h-[700px] w-[380px] h-[1000px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 md:pl-[40px] pl-[20px]">
@@ -39,6 +40,7 @@ function TermsAndCondition() {
         <div className=" w-[150px] h-[50px] md:ml-[200px] ml-[80px] mt-[30px] border-solid rounded-3xl border-2 border-orange-500 hover:bg-orange-200 font-semibold">
             <Link to="/profile"><button className=" w-full h-full ">Go To Profile</button></Link>
         </div>
+    </div>
     </div>
     </div>
   )

@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 
 const AboutUs=()=> {
   return (
+    <div className="md:mx-[260px] mx-[25px] ">
     <div className=" flex flex-col md:flex-row gap-12 ">
     <Profile/>
     <div className=" md:w-[650px] md:h-[700px] w-[380px] h-[1000px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 md:pl-[40px] pl-[20px]">
@@ -41,6 +42,8 @@ const AboutUs=()=> {
         </div>
     </div>
     </div>
+    </div>
+    
   )
 }
 

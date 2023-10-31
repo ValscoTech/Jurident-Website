@@ -11,23 +11,25 @@ import Details from './Components/ProfilePage/Details';
 import AboutUs from './Components/ProfilePage/AboutUs';
 import TermsAndCondition from './Components/ProfilePage/TermsAndCondition';
 import ChangePassword from './Components/ProfilePage/ChangePassword';
+import Profile from './Components/ProfilePage/Profile';
 
 const App = () => {
   return (
     <Router>
 				<Navbar/>
 				<Routes>
+
 					<Route exact path="/" element={<HomePage />} />
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/register" element={<Register/>} />
 
           <Route path="/Profile" element={<Details />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
-        <Route path="/ChangePassword" element={<ChangePassword/>} />
-         
-          </Routes>
-          </Router>
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
+          <Route path="/ChangePassword" element={<ChangePassword/>} />
+
+         </Routes>
+  </Router>
   )
 }
 
