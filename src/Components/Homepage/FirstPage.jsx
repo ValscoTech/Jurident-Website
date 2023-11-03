@@ -58,7 +58,7 @@ function FirstPage() {
     return (
       <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
         <div className="flex flex-col items-center text-center justify-center">
-          <h1 className="text-[90px] font-[Satoshi]  font-black leading-[135px]">
+          <h1 className="text-[90px] font-[Satoshi] font-black leading-[135px]">
             Jurident
           </h1>
           <h2 className="text-[30px] font-[Satoshi]  font-black leading-[135px]">
