@@ -9,18 +9,12 @@
   font-size: 25px;
 }
 
-#form {
-  margin-left: 65px;
-  width: 50%;
-}
-
 .login {
   width: 500px;
   color: #050125;
 }
 
 input[type="text"] {
-  border: solid 3px #050125;
   border-radius: 5px;
 }
 
@@ -69,7 +63,7 @@ input[type="submit"] {
 
 #signup-option {
   padding: 20px;
-  margin-left: 35px;
+  text-align: center;
 }
 
 #signup {
@@ -111,7 +105,6 @@ input[type="submit"] {
 
 #login-img {
   margin-top: 38px;
-  background: #eeeeee;
   height: 55%;
   width: 100%;
 }
@@ -122,12 +115,13 @@ input[type="submit"] {
   color: red;
 }
 
-
-
+@media(max-width: 1024px) {
+  #form {
+    width: 40%;
+  }
+}
 
 @media (max-width: 768px) {
-
-
 
   #main {
     margin: 0px;
@@ -135,14 +129,13 @@ input[type="submit"] {
     display: flex;
   }
 
+  #form {
+    width: 75%;
+  }
+
   #login-intro {
     font-weight: 600;
     font-size: 25px;
-  }
-
-  #form {
-    margin-left: 0px;
-    width: 100%;
   }
 
   .login {
@@ -229,18 +222,6 @@ input[type="submit"] {
     display: none;
   }
 
-  #login-info-main {
-    display: none;
-  }
-
-  #login-info-secondary {
-    display: none;
-  }
-
-  #login-img {
-    display: none;
-  }
-
   .validation {
     margin-bottom: 5px;
     font-size: 15px;
@@ -248,8 +229,10 @@ input[type="submit"] {
 
     z-index: 99999;
   }
+}
 
-
-
-
+@media (max-width: 600px) {
+  #form {
+    width: 100%;
+  }
 }

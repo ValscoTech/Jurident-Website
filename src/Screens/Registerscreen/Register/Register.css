@@ -4,12 +4,7 @@
   display: flex;
 }
 
-#form {
-  margin-left: 65px;
-  width: 50%;
-}
-
-input[type="submit"] {
+.login-btn {
   border: solid 3px #050125;
   border-radius: 5px;
   width: 100%;
@@ -17,6 +12,11 @@ input[type="submit"] {
   margin-top: 18px;
   background-color: #050125;
   color: white;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  transform: scale(1.02);
 }
 
 #seperator {
@@ -58,9 +58,19 @@ input[type="submit"] {
 
 #login-img {
   margin-top: 38px;
-  background: #eeeeee;
   height: 55%;
   width: 100%;
+}
+
+#login:hover {
+  font-weight: 700;
+  color: orangered;
+}
+
+@media(max-width: 1024px) {
+  #form {
+    width: 40%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -71,23 +81,12 @@ input[type="submit"] {
   }
 
   #form {
-    margin-left: 0px;
-    width: 100%;
+    width: 75%;
   }
 
   input[type="text"] {
     border: solid 3px #050125;
     border-radius: 5px;
-  }
-
-  input[type="submit"] {
-    border: solid 3px #050125;
-    border-radius: 5px;
-    width: 100%;
-    height: 50px;
-    margin-top: 18px;
-    background-color: #050125;
-    color: white;
   }
 
   #seperator {
@@ -117,8 +116,10 @@ input[type="submit"] {
   #info {
     display: none;
   }
+}
 
-  #login-img {
-    display: none;
+@media (max-width: 600px) {
+  #form {
+    width: 100%;
   }
 }

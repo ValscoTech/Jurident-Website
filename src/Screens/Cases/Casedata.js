@@ -3,7 +3,7 @@ let formData = {
     caseno1: '',
     casename1: '',
     hearingDate1: '',
-    courtName1: 'court0', // Default value
+    courtName1: 'court0', // Default value 
     partyname1: '',
     partycontact1: '',
     caseno2: '',
