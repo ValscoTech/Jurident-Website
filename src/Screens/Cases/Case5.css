@@ -1,19 +1,19 @@
-.App {
+.Case5 {
   text-align: center;
 }
 
-.App-logo {
+.Case5-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (prefers-reduced-motion: no-preference) { 
+  .Case5-logo {
+    animation: Case5-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.Case5-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,11 +24,11 @@
   color: white;
 }
 
-.App-link {
+.Case5-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes Case5-logo-spin {
   from {
     transform: rotate(0deg);
   }
