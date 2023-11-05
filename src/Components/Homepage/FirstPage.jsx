@@ -32,8 +32,7 @@ function FirstPage() {
             Protecting Rights
           </h2>
           <div
-            className="flex justify-center align-middle mt-[103px] w-[800px] h-[125px] ml-[161px] box-border border border-solid border-black
-                                     rounded-full  bg-bg-loc_sec"
+            className="flex justify-center align-middle mt-[103px] w-[800px] h-[125px] ml-[161px] box-border rounded-full  bg-bg-loc_sec bg-[#17A1FA] "
           >
             <div className=" flex flex-col justify-center  align-center px-[1.5rem]">
               <div className=" px-2">

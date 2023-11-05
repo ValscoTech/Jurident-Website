@@ -1,0 +1,22 @@
+#signup:hover {
+    font-weight: 700;
+    color: orangered;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    color: black;
+    transform: scale(1.01);
+}
+
+.googleLog:hover {
+    background-color: orangered;
+    color: white;
+    transform: scale(1.01);
+}
+
+.facebookLog:hover {
+    background-color: white;
+    color: #1877f2;
+    transform: scale(1.01);
+}
