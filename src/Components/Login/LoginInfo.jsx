@@ -20,7 +20,7 @@ const LoginInfo = () => {
     <div id="info">
       <div id="login-img" className="bg-transparent relative">
         <img
-          className="absolute w-11/12 h-full object-contain"
+          className="absolute w-11/12 h-full object-none"
           src={imgShow[currIndex]}
           alt=""
         />

@@ -19,7 +19,7 @@ const Hero2 = () => {
           backgroundImage: `url(${BG_RIBBON})`,
         }}
       >
-        <h1 className="text-center font-poppins text-4xl pt-7 font-medium text-gray-800 mb-8">
+        <h1 className="text-center font-poppins text-4xl pt-7 font-medium text-gray-800 mb-8 dark:text-white">
           Key features
         </h1>
         <div className="justify-center items-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
@@ -67,8 +67,8 @@ const Hero2 = () => {
                   any upcoming events.
                 </p>
                 <div className="flex mt-[240px] gap-4 sm:gap-8">
-                  <button className="px-4 sm:px-8 py-2 bg-transparent border border-black rounded-3xl">
-                    <span className="px-5 text-black">Try it</span>
+                  <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
+                    <span className="px-5 text-white">Try it</span>
                   </button>
                   <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
                     <span className="px-5">Use now</span>
@@ -112,14 +112,14 @@ const Hero2 = () => {
         </div>
         <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
           <img src={vector} alt="" className="max-w-full h-auto" />
-          <p className="text-gray-700 text-lg mt-2">
+          <p className="text-gray-700 text-lg mt-2 dark:text-white">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
             temporibus voluptate modi maxime id commodi explicabo rem veniam?
             Pariatur quas eius quo modi repellendus perferendis magni voluptas,
             eligendi at similique?
           </p>
           <div className="mt-4 text-end">
-            <h1 className="text-xl font-bold text-gray-800">John Doe</h1>
+            <h1 className="text-xl font-bold text-gray-800 dark:text-white">John Doe</h1>
             <h4 className="text-sm font-normal text-gray-500">Lorem Ipsum</h4>
           </div>
         </div>
@@ -128,14 +128,14 @@ const Hero2 = () => {
         </div>
         <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
           <img src={vector} alt="" className="max-w-full h-auto" />
-          <p className="text-gray-700 text-lg mt-2">
+          <p className="text-gray-700 text-lg mt-2 dark:text-white">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
             temporibus voluptate modi maxime id commodi explicabo rem veniam?
             Pariatur quas eius quo modi repellendus perferendis magni voluptas,
             eligendi at similique?
           </p>
           <div className="mt-4 text-end">
-            <h1 className="text-xl font-bold text-gray-800">John Doe</h1>
+            <h1 className="text-xl font-bold text-gray-800 dark:text-white">John Doe</h1>
             <h4 className="text-sm font-normal text-gray-500">Lorem Ipsum</h4>
           </div>
         </div>
@@ -150,14 +150,14 @@ const Hero2 = () => {
         </div>
         <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
           <img src={vector} alt="" className="max-w-full h-auto" />
-          <p className="text-gray-700 text-lg mt-2">
+          <p className="text-gray-700 text-lg mt-2 dark:text-white">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
             temporibus voluptate modi maxime id commodi explicabo rem veniam?
             Pariatur quas eius quo modi repellendus perferendis magni voluptas,
             eligendi at similique?
           </p>
           <div className="mt-4 text-end">
-            <h1 className="text-xl font-bold text-gray-800">John Doe</h1>
+            <h1 className="text-xl font-bold text-gray-800 dark:text-white">John Doe</h1>
             <h4 className="text-sm font-normal text-gray-500">Lorem Ipsum</h4>
           </div>
         </div>
