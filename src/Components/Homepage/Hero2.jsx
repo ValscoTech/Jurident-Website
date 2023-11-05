@@ -36,10 +36,10 @@ const Hero2 = () => {
                 padding: "20px",
               }}
             >
-              <h1 className="text-[32px] font-semibold  mb-2">
+              <h1 className="text-[32px] font-semibold text-white mb-2">
                 Everything in one place
               </h1>
-              <p className="max-w[30px]">
+              <p className="max-w[30px] text-white">
                 Add your personal notes to any case you'd prefer
               </p>
               <div className="flex mt-[140px] gap-4 sm:gap-8">
@@ -63,10 +63,10 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[32px] font-semibold 0 mb-2">
+                <h1 className="text-[32px] font-semibold text-white mb-2">
                   Never be Late
                 </h1>
-                <p className=" max-w-[400px]">
+                <p className=" max-w-[400px] text-white">
                   Our alarm system integrated within the app will notify you of
                   any upcoming events.
                 </p>
@@ -89,10 +89,10 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[32px] font-semibold  mb-2">
+                <h1 className="text-[32px] font-semibold text-white mb-2">
                   Stay Organized
                 </h1>
-                <p className=" max-w-[300px]">
+                <p className=" max-w-[300px] text-white">
                   Ensure that your schedule is accurate by entering new
                   appointments or events into our digital calendar.
                 </p>
@@ -110,63 +110,70 @@ const Hero2 = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap pt-4">
-        <div className="rounded-2xl py-6 pl-6">
-          <img src={frame1} alt="" />
-        </div>
-        <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
-          <img src={vector} alt="" className="max-w-full h-auto" />
-          <p className="text-gray-700 text-lg mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
-            temporibus voluptate modi maxime id commodi explicabo rem veniam?
-            Pariatur quas eius quo modi repellendus perferendis magni voluptas,
-            eligendi at similique?
-          </p>
-          <div className="mt-4 text-end">
-            <h1 className="text-xl font-bold text-gray-800">John Doe</h1>
-            <h4 className="text-sm font-normal text-gray-500">Lorem Ipsum</h4>
+      <div className="pt-4">
+        <div className="flex">
+          <div className="rounded-2xl py-6 pl-6">
+            <img src={frame1} alt="" />
+          </div>
+          <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
+            <img src={vector} alt="" className="max-w-full h-auto" />
+            <p className="font-gray-700 text-lg mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+              temporibus voluptate modi maxime id commodi explicabo rem veniam?
+              Pariatur quas eius quo modi repellendus perferendis magni
+              voluptas, eligendi at similique?
+            </p>
+            <div className="mt-4 text-end">
+              <h1 className="text-xl font-bold font-gray-800">John Doe</h1>
+              <h4 className="text-sm font-normal font-gray-500">Lorem Ipsum</h4>
+            </div>
+          </div>
+          <div className="rounded-2xl py-6 pl-6">
+            <img src={frame2} alt="" />
           </div>
         </div>
-        <div className="rounded-2xl py-6 pl-6">
-          <img src={frame2} alt="" />
-        </div>
-        <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
-          <img src={vector} alt="" className="max-w-full h-auto" />
-          <p className="text-gray-700 text-lg mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
-            temporibus voluptate modi maxime id commodi explicabo rem veniam?
-            Pariatur quas eius quo modi repellendus perferendis magni voluptas,
-            eligendi at similique?
-          </p>
-          <div className="mt-4 text-end">
-            <h1 className="text-xl font-bold text-gray-800">John Doe</h1>
-            <h4 className="text-sm font-normal text-gray-500">Lorem Ipsum</h4>
+        <div className="flex">
+          <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
+            <img src={vector} alt="" className="max-w-full h-auto" />
+            <p className="font-gray-700 text-lg mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+              temporibus voluptate modi maxime id commodi explicabo rem veniam?
+              Pariatur quas eius quo modi repellendus perferendis magni
+              voluptas, eligendi at similique?
+            </p>
+            <div className="mt-4 text-end">
+              <h1 className="text-xl font-bold font-gray-800">John Doe</h1>
+              <h4 className="text-sm font-normal font-gray-500">Lorem Ipsum</h4>
+            </div>
+          </div>
+          <div className="rounded-2xl py-6 pl-6 pr-9 mr-12">
+            <img src={frame3} alt="" />
+          </div>
+          <div className="rounded-2xl py-6 pl-6">
+            <img src={frame4} alt="" />
           </div>
         </div>
-        <div className="rounded-2xl py-6 pl-6 pr-9 mr-12">
-          <img src={frame3} alt="" />
-        </div>
-        <div className="rounded-2xl py-6 pl-6">
-          <img src={frame4} alt="" />
-        </div>
-        <div className="rounded-2xl py-6">
-          <img src={frame5} alt="" />
-        </div>
-        <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
-          <img src={vector} alt="" className="max-w-full h-auto" />
-          <p className="text-gray-700 text-lg mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
-            temporibus voluptate modi maxime id commodi explicabo rem veniam?
-            Pariatur quas eius quo modi repellendus perferendis magni voluptas,
-            eligendi at similique?
-          </p>
-          <div className="mt-4 text-end">
-            <h1 className="text-xl font-bold text-gray-800">John Doe</h1>
-            <h4 className="text-sm font-normal text-gray-500">Lorem Ipsum</h4>
+
+        <div className="flex">
+          <div className="rounded-2xl py-6">
+            <img src={frame5} alt="" />
           </div>
-        </div>
-        <div className="rounded-2xl py-6 pl-6">
-          <img src={frame6} alt="" />
+          <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
+            <img src={vector} alt="" className="max-w-full h-auto" />
+            <p className="font-gray-700 text-lg mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+              temporibus voluptate modi maxime id commodi explicabo rem veniam?
+              Pariatur quas eius quo modi repellendus perferendis magni
+              voluptas, eligendi at similique?
+            </p>
+            <div className="mt-4 text-end">
+              <h1 className="text-xl font-bold font-gray-800">John Doe</h1>
+              <h4 className="text-sm font-normal font-gray-500">Lorem Ipsum</h4>
+            </div>
+          </div>
+          <div className="rounded-2xl py-6 pl-6">
+            <img src={frame6} alt="" />
+          </div>
         </div>
       </div>
     </>
