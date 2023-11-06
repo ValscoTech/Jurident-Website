@@ -36,10 +36,10 @@ const Hero2 = () => {
                 padding: "20px",
               }}
             >
-              <h1 className="text-[32px] font-semibold text-white mb-2">
+              <h1 className="text-[40px] pt-4 font-semibold text-white mb-2">
                 Everything in one place
               </h1>
-              <p className="max-w[30px] text-white">
+              <p className="max-w[30px] text-[22px] text-white">
                 Add your personal notes to any case you'd prefer
               </p>
               <div className="flex mt-[140px] gap-4 sm:gap-8">
@@ -63,10 +63,10 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[32px] font-semibold pt-8 text-white mb-2">
+                <h1 className="text-[40px] font-semibold pt-8 mt-8 text-white mb-2">
                   Never be Late
                 </h1>
-                <p className=" max-w-[400px] text-white">
+                <p className="text-[22px] max-w-[400px] text-white">
                   Our alarm system integrated within the app will notify you of
                   any upcoming events.
                 </p>
@@ -89,10 +89,10 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[32px] font-semibold pt-7 text-white mb-2">
+                <h1 className="text-[40px] font-semibold pt-9 mt-6 text-white mb-2">
                   Stay Organized
                 </h1>
-                <p className=" max-w-[300px] text-white">
+                <p className=" max-w-[300px] text-[22px] text-white">
                   Ensure that your schedule is accurate by entering new
                   appointments or events into our digital calendar.
                 </p>
