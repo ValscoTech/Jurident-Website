@@ -19,7 +19,7 @@ const Hero2 = () => {
           backgroundImage: `url(${BG_RIBBON})`,
         }}
       >
-        <h1 className="text-center font-poppins text-4xl pt-7 font-medium text-gray-800 mb-8 dark:text-white">
+        <h1 className="text-center font-poppins text-[44px] pt-7 font-gray-800 font-semibold mb-8 dark:text-white">
           Key features
         </h1>
         <div className="justify-center items-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
@@ -89,7 +89,7 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[40px] font-semibold pt-9 mt-6 text-white mb-2">
+                <h1 className="text-[40px] font-semibold pt-9 mt-10 text-white mb-2">
                   Stay Organized
                 </h1>
                 <p className=" max-w-[300px] text-[22px] text-white">
@@ -111,7 +111,7 @@ const Hero2 = () => {
       </div>
 
       <div className="pt-4">
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div className="rounded-2xl py-6 pl-6">
             <img src={frame1} alt="" />
           </div>
@@ -132,7 +132,7 @@ const Hero2 = () => {
             <img src={frame2} alt="" />
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div className="border border-gray-600 p-4 max-w-md mx-auto my-4 rounded-[30px]">
             <img src={vector} alt="" className="max-w-full h-auto" />
             <p className="font-gray-700 text-lg mt-2">
@@ -146,15 +146,15 @@ const Hero2 = () => {
               <h4 className="text-sm font-normal font-gray-500">Lorem Ipsum</h4>
             </div>
           </div>
-          <div className="rounded-2xl py-6 pl-6 pr-9 mr-12">
+          <div className="rounded-2xl py-6 pl-6 pr-2 mr-12">
             <img src={frame3} alt="" />
           </div>
-          <div className="rounded-2xl py-6 pl-6">
+          <div className="rounded-2xl py-6 pl-2">
             <img src={frame4} alt="" />
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div className="rounded-2xl py-6">
             <img src={frame5} alt="" />
           </div>
