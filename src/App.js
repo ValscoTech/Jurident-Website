@@ -11,6 +11,7 @@ import Details from './Components/ProfilePage/Details';
 import AboutUs from './Components/ProfilePage/AboutUs';
 import TermsAndCondition from './Components/ProfilePage/TermsAndCondition';
 import ChangePassword from './Components/ProfilePage/ChangePassword';
+import Cases from './Screens/Cases/Cases';
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
         <Route path="/ChangePassword" element={<ChangePassword/>} />
-         
+    
+        <Route path="/Services" element={<Cases/>} />
           </Routes>
           </Router>
   )
