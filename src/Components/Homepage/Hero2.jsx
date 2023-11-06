@@ -44,10 +44,10 @@ const Hero2 = () => {
               </p>
               <div className="flex mt-[140px] gap-4 sm:gap-8">
                 <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
-                  <span className="px-5">Try it</span>
+                  <span className="px-5 text-white">Try it</span>
                 </button>
                 <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
-                  <span className="px-5">Use now</span>
+                  <span className="px-5 text-white">Use now</span>
                 </button>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Hero2 = () => {
                     <span className="px-5 text-black">Try it</span>
                   </button>
                   <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
-                    <span className="px-5">Use now</span>
+                    <span className="px-5 text-white">Use now</span>
                   </button>
                 </div>
               </div>
@@ -98,10 +98,10 @@ const Hero2 = () => {
                 </p>
                 <div className="flex mt-[210px] gap-4 sm:gap-8">
                   <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
-                    <span className="px-5">Try it</span>
+                    <span className="px-5 text-white">Try it</span>
                   </button>
                   <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
-                    <span className="px-5">Use now</span>
+                    <span className="px-5 text-white">Use now</span>
                   </button>
                 </div>
               </div>
