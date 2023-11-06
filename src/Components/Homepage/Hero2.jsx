@@ -63,7 +63,7 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[32px] font-semibold text-white mb-2">
+                <h1 className="text-[32px] font-semibold pt-8 text-white mb-2">
                   Never be Late
                 </h1>
                 <p className=" max-w-[400px] text-white">
@@ -89,7 +89,7 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[32px] font-semibold text-white mb-2">
+                <h1 className="text-[32px] font-semibold pt-7 text-white mb-2">
                   Stay Organized
                 </h1>
                 <p className=" max-w-[300px] text-white">
