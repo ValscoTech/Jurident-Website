@@ -110,7 +110,7 @@ const Hero2 = () => {
         </div>
       </div>
 
-      <div className="pt-4">
+      <div className="pt-4 font-poppins">
         <div className="flex flex-wrap">
           <div className="rounded-2xl py-6 pl-6">
             <img src={frame1} alt="" />

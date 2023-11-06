@@ -24,7 +24,7 @@ const SecondPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center gap-11 pb-11">
+          <div className="flex flex-col font-poppins justify-center gap-11 pb-11">
             <div className="flex text-xl font-semibold  max-md:justify-centre text-gray-800  text-left max-md:text-lg max-md:font-normal">
               <TiTick className=" text-lg inline-block mt-1 mr-2 text-white bg-green-400 rounded-full break-words " />
               <p className=" w-[500px] max-md:w-auto dark:text-white">
