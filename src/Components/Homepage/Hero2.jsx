@@ -14,7 +14,7 @@ const Hero2 = () => {
   return (
     <>
       <div
-        className="flex flex-col gap-11 overflow-hidden justify-center bg-no-repeat bg-cover relative"
+        className="flex flex-col gap-11 overflow-hidden justify-center font-poppins bg-no-repeat bg-cover relative"
         style={{
           backgroundImage: `url(${BG_RIBBON})`,
         }}
@@ -63,14 +63,14 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[40px] font-semibold pt-8 mt-8 text-white mb-2">
+                <h1 className="text-[40px] font-semibold pt-10 mt-11 text-white mb-2">
                   Never be Late
                 </h1>
                 <p className="text-[22px] max-w-[400px] text-white">
                   Our alarm system integrated within the app will notify you of
                   any upcoming events.
                 </p>
-                <div className="flex mt-[240px] gap-4 sm:gap-8">
+                <div className="flex mt-[220px] gap-4 sm:gap-8">
                   <button className="px-4 sm:px-8 py-2 bg-transparent border border-black rounded-3xl">
                     <span className="px-5 text-black">Try it</span>
                   </button>
@@ -89,14 +89,14 @@ const Hero2 = () => {
                   padding: "20px",
                 }}
               >
-                <h1 className="text-[40px] font-semibold pt-9 mt-10 text-white mb-2">
+                <h1 className="text-[40px] font-semibold pt-10 mt-11 text-white mb-2">
                   Stay Organized
                 </h1>
                 <p className=" max-w-[300px] text-[22px] text-white">
                   Ensure that your schedule is accurate by entering new
                   appointments or events into our digital calendar.
                 </p>
-                <div className="flex mt-[210px] gap-4 sm:gap-8">
+                <div className="flex mt-[190px] gap-4 sm:gap-8">
                   <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
                     <span className="px-5 text-white">Try it</span>
                   </button>

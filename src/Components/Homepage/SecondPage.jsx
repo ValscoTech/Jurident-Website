@@ -5,7 +5,7 @@ import { TiTick } from "react-icons/ti";
 const SecondPage = () => {
   return (
     <div
-      className="flex flex-col gap-11 p-[2rem] overflow-hidden justify-center h-screen bg-norepeat bg-cover  relative"
+      className="flex flex-col gap-11 p-[2rem] overflow-hidden justify-center h-screen bg-no-repeat bg-cover  relative"
       style={{
         backgroundImage: `url(${BG_RIBBON})`,
       }}
@@ -13,14 +13,13 @@ const SecondPage = () => {
       <div className="flex relative">
         <div className=" flex flex-col gap-10 max-lg:gap-5 flex-wrap">
           <div className="flex flex-col justify-center align-middle ">
-            <div className="flex flex-col justify-center font-[Satoshi] font-bold text-[80px] max-lg:text-[60px] max-md:text-[30px]">
-              <h1>
-                <span className="text-blue-500">EMPOWERING</span> JUSTICE
+            <div className="flex flex-col justify-center font-poppins font-bold text-[80px] max-lg:text-[60px] max-md:text-[30px]">
+              <h1 className="gap-2 flex">
+                <span className="text-blue-500">EMPOWERING</span>JUSTICE
                 <span className=" inline-block text-blue-500">,</span>
               </h1>
-              <h1>
-                <span className="text-blue-500">PROCTECTING</span> RIGHTS
-                <span className=" inline-block text-blue-500">.</span>{" "}
+              <h1 className="flex gap-3">
+                <span className="text-blue-500">PROCTECTING </span> RIGHTS<span className="inline-block text-blue-500">.</span>{" "}
               </h1>
             </div>
           </div>
