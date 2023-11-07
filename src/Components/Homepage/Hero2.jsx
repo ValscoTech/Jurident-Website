@@ -1,15 +1,15 @@
 import React from "react";
-import img1 from "./assets/image 5.png";
-import img2 from "./assets/image 7.png";
-import img3 from "./assets/iPhone 14.png";
-import BG_RIBBON from "./assets/bg-ribbion.png";
-import frame1 from "./assets/Frame 1000001782.png";
-import frame2 from "./assets/Frame 1000001784.png";
-import frame3 from "./assets/Frame 1000001786.png";
-import frame4 from "./assets/Frame 1000001787.png";
-import frame5 from "./assets/Frame 1000001789.png";
-import frame6 from "./assets/Frame 1000001790.png";
-import vector from "./assets/Vector.svg";
+import img1 from "../../Assets/HomePage/image 5.png";
+import img2 from "../../Assets/HomePage/image 7.png";
+import img3 from "../../Assets/HomePage/iPhone 14.png";
+import BG_RIBBON from "../../Assets/HomePage/bg-ribbion.png";
+import frame1 from "../../Assets/HomePage/Frame 1000001782.png";
+import frame2 from "../../Assets/HomePage/Frame 1000001784.png";
+import frame3 from "../../Assets/HomePage/Frame 1000001786.png";
+import frame4 from "../../Assets/HomePage/Frame 1000001787.png";
+import frame5 from "../../Assets/HomePage/Frame 1000001789.png";
+import frame6 from "../../Assets/HomePage/Frame 1000001790.png";
+import vector from "../../Assets/HomePage/Vector.svg";
 const Hero2 = () => {
   return (
     <>

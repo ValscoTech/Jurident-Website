@@ -1,6 +1,6 @@
 import React from "react";
-import BG_RIBBON from "./assets/bg-ribbion.png";
-import BG_MAN from "./assets/bg-man.png";
+import BG_RIBBON from "../../Assets/HomePage/bg-ribbion.png";
+import BG_MAN from "../../Assets/HomePage/bg-man.png";
 import { TiTick } from "react-icons/ti";
 const SecondPage = () => {
   return (
