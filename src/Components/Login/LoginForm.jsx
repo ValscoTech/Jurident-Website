@@ -18,12 +18,17 @@ const defaultFormFields = {
 
 const LoginForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
+  const [errorCode, setError] = useState({ email: "", pass: "" });
   const { email, password } = formFields;
 
   // console.log(formFields);
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
+    setError({
+      email: "",
+      pass: "",
+    });
   };
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
@@ -45,13 +50,25 @@ const LoginForm = () => {
     } catch (error) {
       switch (error.code) {
         case "auth/wrong-password":
-          alert("incorrect password for email");
+          setError({
+            email: "",
+            pass: "Incorrect password for email",
+          });
           break;
         case "auth/user-not-found":
-          alert("no user associated with this email");
+          setError({
+            email: "No user associated with this email",
+            pass: "",
+          });
+          break;
+        case "auth/invalid-email":
+          setError({
+            email: "Invalid email entered",
+            pass: "",
+          });
           break;
         default:
-          console.log(error);
+          console.log(error.code);
       }
     }
   };
@@ -74,7 +91,7 @@ const LoginForm = () => {
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
-            for="email"
+            htmlFor="email"
           >
             Email
           </label>
@@ -87,11 +104,14 @@ const LoginForm = () => {
             name="email"
             value={email}
           />
+          <div className="pb-4 text-red-600">
+            {errorCode.email}
+          </div>
         </div>
         <div className="mb-6">
           <label
             className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
-            for="password"
+            htmlFor="password"
           >
             Password
           </label>
@@ -104,7 +124,9 @@ const LoginForm = () => {
             name="password"
             value={password}
           />
-
+          <div className="pb-4 text-red-600">
+            {errorCode.pass}
+          </div>
           <div id="rememberMe">
             <input
               className="border rounded"

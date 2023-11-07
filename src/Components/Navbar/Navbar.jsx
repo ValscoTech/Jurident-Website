@@ -5,7 +5,7 @@ import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
-import log from "../../Assets/Login/Login-1.png";
+import log from "../../Assets/Logo.png";
 import { UserContext } from "../../context/user.context";
 import { signOutUser } from "../../utils/firebase.utils";
 import ModeBtn from "../DarkMode_Btn/Mode_btn";
@@ -22,10 +22,10 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <nav className="navbar bg-slate-50 dark:bg-[#060125]">
-          <div className="navbar-container ">
+          <div className="navbar-container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img src={log} alt="icon" className="navbar-icon" />
-              JURIDENT
+              <img src={log} alt="icon" className="navbar-icon bg-transparent" />
+              <span className="pt-4 text-2xl">JURIDENT</span>
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
