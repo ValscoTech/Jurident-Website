@@ -29,6 +29,7 @@ const Details=()=>{
   ]
   
   return (
+    <div className="md:mx-[260px] mx-[25px] ">
     <div className=" flex flex-col md:flex-row gap-12 ">
     <Profile/>
     <div className=" md:w-[650px] md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
@@ -45,7 +46,7 @@ const Details=()=>{
                   <h1>Hint</h1>
                 </div>
                 <div className='w-full h-[100px]  '>
-                  <h1>LAWYER Degree</h1>
+                  <h1>LAWYER DEGREE</h1>
                   <div>
                     <Select
                     placeholder='select degree...'
@@ -59,12 +60,12 @@ const Details=()=>{
                   <h1>Hint</h1>
                 </div>
                 <div className='w-full h-[100px] '>
-                  <h1>Email</h1>
+                  <h1>EMAIL</h1>
                   <input className=" w-full h-[40px]  rounded-lg border-solid border-orange-300 border-2 outline-none pl-[20px] " placeholder="email"></input>
                   <h1>Hint</h1>
                 </div>
                 <div className='w-full h-[100px]  '>
-                  <h1>Phone Number</h1>
+                  <h1>PHONE NUMBER</h1>
                   <input className=" w-full h-[40px]  rounded-lg border-solid border-orange-300 border-2 outline-none pl-[20px] " placeholder="phone"></input>
                   <h1>Hint</h1>
                 </div>
@@ -79,6 +80,7 @@ const Details=()=>{
                     </div>
                 </div>
       </div>
+    </div>
     </div>
     </div>
   )

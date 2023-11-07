@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 
 const ChangePassword=()=> {
   return (
+    <div className="md:mx-[260px] mx-[25px] ">
     <div className="flex flex-col md:flex-row gap-12 ">
     <Profile/>
     <div className=" md:w-[650px] md:h-[700px] w-[380px] h-[750px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 px-[40px]">
@@ -36,6 +37,8 @@ const ChangePassword=()=> {
         </div>
     </div>
     </div>
+    </div>
+    
   )
 }
 

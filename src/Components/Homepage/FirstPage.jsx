@@ -23,10 +23,10 @@ function FirstPage() {
           className="absolute ml-[546px]  w-[732px] h-[800px] pb-16"
         />
         <div className="absolute h-[100%] w-[100%]">
-          <h1 className=" w-[406px] h-[74px] text-[100px] font-[Satoshi] ml-[163px] mt-[173px]  font-black leading-[135px]">
+          <h1 className=" w-[406px] h-[74px] text-[100px] font-poppins ml-[163px] mt-[173px]  font-black leading-[135px]">
             Jurident
           </h1>
-          <h2 className="mt-[79px] ml-[158px] w-[773px] h-[164px] font-[Satoshi] font-bold text-[70px] leading-[108px]">
+          <h2 className="mt-[79px] ml-[158px] w-[773px] h-[164px] font-poppins font-bold text-[70px] leading-[108px]">
             Empowering Justice,
             <br />
             Protecting Rights
@@ -37,7 +37,7 @@ function FirstPage() {
             <div className=" flex flex-col justify-center  align-center px-[1.5rem]">
               <div className=" px-2">
                 <SlLocationPin className=" inline-block text-white text-3xl " />
-                <h3 className="w-[196px] h-[19px] ml-[46px] md-[50px] font-[Satoshi] underline  underline-offset-[14px] inline p-4 text-[26px] text-white font-medium ">
+                <h3 className="w-[196px] h-[19px] ml-[46px] md-[50px] font-poppins underline  underline-offset-[14px] inline p-4 text-[26px] text-white font-medium ">
                   <input
                     type="text"
                     placeholder="Search for a City"
@@ -57,17 +57,17 @@ function FirstPage() {
     return (
       <div className="flex flex-col items-center justify-center h-screen">
         <div className="flex flex-col items-center text-center justify-center">
-          <h1 className="text-[90px] font-[Satoshi]  font-black leading-[135px]">
+          <h1 className="text-[90px] font-poppins font-black leading-[135px]">
             Jurident
           </h1>
-          <h2 className="text-[30px] font-[Satoshi]  font-black leading-[135px]">
+          <h2 className="text-[30px] font-poppins  font-black leading-[135px]">
             <span className=" text-blue-500">Empowring</span> Justice,{" "}
             <span className="text-blue-500">Protecting</span> Rights
           </h2>
           <div className="flex items-center justify-center  space-x-2">
             <div className="flex items-center gap-8 text-xl h-16 border-2 border-gray-800 rounded-md">
               <SlLocationPin className=" text-center ml-8" />
-              <h3 className="font-[Satoshi] w-[40%] text-center text-black font-medium ">
+              <h3 className="font-poppins w-[40%] text-center text-black font-medium ">
                 <input
                   type="text"
                   placeholder="Search for a City"
