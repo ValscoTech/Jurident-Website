@@ -22,20 +22,14 @@ const Hero2 = () => {
         <h1 className="text-center font-poppins text-[44px] pt-7 font-gray-800 font-semibold mb-8 dark:text-white">
           Key features
         </h1>
-        <div className="justify-center items-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-          <div className=" mb-5 font-white rounded-3xl shadow-md bg-white relative">
+        <div className="justify-center items-center flex flex-wrap px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
+          <div className=" mb-5 font-white rounded-3xl flex flex-col flex-wrap shadow-md bg-white relative">
             <img
               src={img1}
               className="w-[1420px] h-[450px] rounded-3xl"
               alt="IMAGE1"
             />
-            <div
-              className="absolute top-0 left-9 right-0 bottom-0 flex flex-col gap-11 justify-center"
-              style={{
-                background: "",
-                padding: "20px",
-              }}
-            >
+            <div className="absolute overflow-visible top-0 left-9 right-0 bottom-0 flex flex-col gap-11 justify-center p-[20px]">
               <h1 className="text-[40px] pt-4 font-semibold text-white mb-2">
                 Everything in one place
               </h1>
@@ -53,16 +47,10 @@ const Hero2 = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-between">
+          <div className="flex flex-wrap sm:flex-row justify-between">
             <div className="font-white mb-5 mr-0 sm:mr-4 rounded-3xl w-[600px] shadow-md">
               <img src={img2} className="w-full h-full rounded-3xl" alt="" />
-              <div
-                className="absolute top-[500px] left-[100px] right-0 bottom-0 flex flex-col gap-11 justify-center"
-                style={{
-                  background: "",
-                  padding: "20px",
-                }}
-              >
+              <div className="absolute top-[500px] left-[100px] right-0 bottom-0 flex flex-col gap-11 p-[20px] justify-center">
                 <h1 className="text-[40px] font-semibold pt-10 mt-11 text-white mb-2">
                   Never be Late
                 </h1>
@@ -82,14 +70,8 @@ const Hero2 = () => {
             </div>
             <div className="font-white mb-5 rounded-3xl shadow-md w-[600px]">
               <img src={img3} className="w-full h-full rounded-3xl" alt="" />
-              <div
-                className="absolute top-[500px] bottom-4  flex flex-col gap-11 mt-8 justify-center"
-                style={{
-                  background: "",
-                  padding: "20px",
-                }}
-              >
-                <h1 className="text-[40px] font-semibold pt-10 mt-11 text-white mb-2">
+              <div className="absolute top-[500px] bottom-4  flex flex-col gap-11 mt-8 p-[20px] justify-center">
+                <h1 className="text-[40px] font-semibold pt-12 mt-11 text-white mb-2">
                   Stay Organized
                 </h1>
                 <p className=" max-w-[300px] text-[22px] text-white">
@@ -108,6 +90,10 @@ const Hero2 = () => {
             </div>
           </div>
         </div>
+
+
+
+
       </div>
 
       <div className="pt-4 font-poppins">
