@@ -55,7 +55,7 @@ function FirstPage() {
     );
   } else {
     return (
-      <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <div className="flex flex-col items-center justify-center h-screen">
         <div className="flex flex-col items-center text-center justify-center">
           <h1 className="text-[90px] font-poppins font-black leading-[135px]">
             Jurident
