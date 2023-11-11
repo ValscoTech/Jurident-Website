@@ -13,7 +13,7 @@ const SecondPage = () => {
       <div className="flex relative">
         <div className=" flex flex-col gap-10 max-lg:gap-5 flex-wrap">
           <div className="flex flex-col justify-center align-middle ">
-            <div className="flex flex-col justify-center font-poppins font-bold text-[80px] max-lg:text-[60px] max-md:text-[30px]">
+            <div className="flex flex-col justify-center font-poppins font-bold text-[80px] max-lg:text-[60px] max-md:text-[30px] max-sm:text-[25px]">
               <h1 className="gap-2 flex">
                 <span className="text-blue-500">EMPOWERING</span>JUSTICE
                 <span className=" inline-block text-blue-500">,</span>
@@ -25,15 +25,15 @@ const SecondPage = () => {
           </div>
 
           <div className="flex flex-col font-poppins justify-center gap-11 pb-11">
-            <div className="flex text-xl font-semibold  max-md:justify-centre text-gray-800  text-left max-md:text-lg max-md:font-normal">
-              <TiTick className=" text-lg inline-block mt-1 mr-2 text-white bg-green-400 rounded-full break-words " />
+            <div className="flex text-xl font-semibold  max-md:justify-centre text-gray-800  text-left max-md:text-lg max-md:font-normal max-sm:text-sm">
+              <TiTick className=" text-lg inline-block mt-1 text-white bg-green-400 rounded-full  mr-2 " />
               <p className=" w-[500px] max-md:w-auto dark:text-white">
                 {" "}
                 <span className=" text-yellow-500">Case Management</span> - keep
                 all of your case details and documents in one location.
               </p>
             </div>
-            <div className="flex text-xl font-semibold max-md:justify-centre text-gray-800 text-left max-md:text-lg max-md:font-normal">
+            <div className="flex text-xl font-semibold max-md:justify-centre text-gray-800 text-left max-md:text-lg max-md:font-normal max-sm:text-sm">
               <TiTick className=" text-lg inline-block mt-1 text-white bg-green-400 rounded-full  mr-2" />
               <p className="w-[500px] max-md:w-auto dark:text-white">
                 {" "}
@@ -41,7 +41,7 @@ const SecondPage = () => {
                 to hit every Deadline
               </p>
             </div>
-            <div className="flex text-xl font-semibold max-md:justify-centre text-gray-800 text-left max-md:text-lg max-md:font-normal">
+            <div className="flex text-xl font-semibold max-md:justify-centre text-gray-800 text-left max-md:text-lg max-md:font-normal max-sm:text-sm">
               <TiTick className=" text-lg inline-block mt-1 text-white bg-green-400 rounded-full  mr-2" />
               <p className="w-[500px] max-md:w-auto dark:text-white">
                 {" "}
