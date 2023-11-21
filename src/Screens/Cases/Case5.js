@@ -1,54 +1,62 @@
-import React from 'react';
-import './Style.css'; //  CSS file 
-import { setFormData, getFormData } from './Casedata'; // Import functions
+// Case5.js
 
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Case5.css';
+import { setFormData, getFormData } from '../Cases/Case5data';
 
 const Case5 = () => {
-  const formData = getFormData(); // Get the initial form data
+  const navigate = useNavigate();
 
-  // Function to handle changes in input fields
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ [name]: value });
-
+    setFormData({ ...getFormData(), [name]: value });
   };
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     const currentFormData = getFormData();
-    // Access the form data from the state
-    console.log(currentFormData);  
-    // You can send the data to a server or perform other actions here
+    console.log(currentFormData);
+    navigate('/caseview', { state: { formData: currentFormData } });
   };
-
   return ( 
     <div> 
       <div className="form-container form1-container"> 
-        <form>
+        <form onSubmit={handleSubmit}>
           <h2>Add a new case</h2>
           <h3>Enter the Party Details</h3> 
+          {/* Case Number */}
           <b>Case No</b> <br />
-          <input type="text" id="caseno1" size="80" placeholder="Enter Case Number" /> <br /> <br />
+          <input type="text" name="caseno1" size="80" placeholder="Enter Case Number" onChange={handleInputChange} /> <br /> <br /> 
+          {/* Case Name */}
           <b>Case Name</b><br />
-          <input type="text" id="casename1" size="80" placeholder="Enter Case Name" /> <br /> <br />
+          <input type="text" name="casename1" size="80" placeholder="Enter Case Name" onChange={handleInputChange} /> <br /> <br />
+          {/* Hearing Date */}
           <b>Hearing Date</b><br /> <br />
-          <input type="date" id="datepicker1" name="datepicker1" />
-          <br /> <b>Court Name</b> <br /> <br />
-          <select name="CourtName1">
-            <option value="court0">Select Court Name</option> 
-            <option value="court1">Select Court Name1</option> 
+          <input type="date" name="hearingDate1" onChange={handleInputChange} /> <br />
+          {/* Court Name */}
+          <b>Court Name</b> <br /> <br />
+          <select name="courtName1" onChange={handleInputChange}>
+            <option value="court0">Select Court Name</option>
+            <option value="court1">Select Court Name1</option>
             <option value="court2">Select Court Name2</option>
-            <option value="court2">Select Court Name3</option>
-            <option value="court2">Select Court Name4</option>
-            <option value="court2">Select Court Name5</option> 
+            <option value="court3">Select Court Name3</option>
+            <option value="court4">Select Court Name4</option>
+            <option value="court5">Select Court Name5</option> 
           </select> <br />
-          <br /><b>Party Name</b> <br />
-          <input type="text" id="partyname1" size="80" placeholder="Enter Party Name" /> <br /> <br />
+          <br />
+          {/* Party Name */}
+          <b>Party Name</b> <br />
+          <input type="text" name="partyname1" size="80" placeholder="Enter Party Name" onChange={handleInputChange} /> <br /> <br />
+          {/* Party Contact Number */}
           <b>Party Contact Number</b><br />
-          <input type="text" id="partycontact1" size="80" placeholder="Enter Party Contact Number" /> <br /> <br />
+          <input type="text" name="partycontact1" size="80" placeholder="Enter Party Contact Number" onChange={handleInputChange} /> <br /> <br />
+          <button type="submit" className="custom-button">Add Case Note</button>
         </form>
       </div>
+
+       
+
 
       <div className="form-container form2-container">
         <form>
@@ -63,10 +71,16 @@ const Case5 = () => {
           <input type="text" id="casename2" size="80" placeholder="Enter Adverse Party Lawyer Number " /> <br /> <br />
           
 
-          <div style={{ textAlign: 'right' }}>
+          <div style={{ textAlign: 'right' }}> 
             <button className="custom-button" type="button" name="addCaseNote">Add Case Note</button>
           </div>
-          <br></br>  <br></br><br></br><br></br><br></br><br></br> <br></br> <br></br><br></br>     
+
+
+
+
+
+
+              
          
           
           
@@ -76,4 +90,5 @@ const Case5 = () => {
   );
 };
 
-export default Case5; 
+export default Case5;  
+ 
