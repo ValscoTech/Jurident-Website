@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  font-family: poppins;
 }
 
 .navbar {
@@ -48,7 +48,7 @@
   text-decoration: none;
   font-size: 2rem;
   font-weight: 900;
-  font-family: Satoshi;
+  font-family: poppins;
   display: flex;
   align-items: center;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SlLocationPin } from "react-icons/sl";
-import BG from "./assets/first_bg.png";
+import BG from "../../Assets/HomePage/first_bg.png";
 
 function FirstPage() {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
