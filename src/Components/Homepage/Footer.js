@@ -9,49 +9,41 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
           <div className="p-6">
             <h1 className="text-4xl font-bold mb-6">JURIDENT</h1>
-            <ul className="text-xl">
-              <li>
-                <Link to="/">Our Services</Link>
-              </li>
-              <li>
-                <Link to="/">News</Link>
-              </li>
-              <li>
-                <Link to="/">Blog</Link>
-              </li>
-              <li>
-                <Link to="/">Terms and Conditions</Link>
-              </li>
-              <li>
-                <Link to="/">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="/">Support</Link>
-              </li>
-              <li>
-                <Link to="/Contact">Contact us</Link>
-              </li>
-            </ul>
+            <div className="text-xl flex flex-col gap-4">
+              <Link to="/">Our Services</Link>
+
+              <Link to="/">News</Link>
+
+              <Link to="/">Blog</Link>
+
+              <Link to="/">Terms and Conditions</Link>
+
+              <Link to="/">Privacy Policy</Link>
+
+              <Link to="/">Support</Link>
+
+              <Link to="/Contact">Contact us</Link>
+            </div>
           </div>
           <div className="p-6">
-            <h3 className="text-2xl">Social Media</h3>
+            <h3 className="text-2xl font-bold">Social Media</h3>
             <div className="mt-4 flex">
               <GrTwitter size={25} className="mr-4" />
               <GrFacebook size={25} className="mr-4" />
               <GrInstagram size={25} />
             </div>
             <h3 className="mt-6 text-2xl">Phone</h3>
-            <ul className="text-xl font-medium">
-              <li className="mt-4">044-27390135</li>
-              <li className="mt-2">9877870012</li>
-            </ul>
+            <div className="text-xl font-medium">
+              <h1 className="mt-4">044-27390135</h1>
+              <h1 className="mt-2">9877870012</h1>
+            </div>
           </div>
           <div className="p-6">
-            <h3 className="text-2xl">E-Mail</h3>
+            <h3 className="text-2xl font-bold">E-Mail</h3>
             <a href="mailto:lorem@gmail.com" className="text-xl">
               lorem@gmail.com
             </a>
-            <h3 className="mt-6 text-2xl">Support</h3>
+            <h3 className="mt-6 text-2xl font-bold">Support</h3>
             <a href="mailto:Support.lorem@gmail.com" className="text-xl">
               support.lorem@gmail.com
             </a>
