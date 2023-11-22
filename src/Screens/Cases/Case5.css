@@ -1,38 +1,56 @@
-.Case5 {
-  text-align: center;
-}
+/*Style.css */
 
-.Case5-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) { 
-  .Case5-logo {
-    animation: Case5-logo-spin infinite 20s linear;
+/* Style for Form 1 */
+.form1-container {
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 100px;
+    font-size: 30px;
+    border-radius: 10px;
   }
-}
-
-.Case5-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Case5-link {
-  color: #61dafb;
-}
-
-@keyframes Case5-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Style for Form 2 */
+  .form2-container {
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 20px;
+    font-size: 31px;
+    border-radius: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Additional styles for form containers (adjust margins as needed) */
+  .form-container {
+    margin-right: 25px;
+    margin-bottom: 20px;
   }
+  
+  /* Style for the button */
+  .custom-button {
+    background-color: #c99f4a;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /* Style for rounded input fields */
+  input[type="text"],
+  input[type="date"],
+  select {
+    /* font-size: 10px; */
+    border: 6px solid #ccc;
+    border-radius: 10px; /* Add border radius for rounded edges */
+    padding: 8px;
+    width: 98%; 
+    margin: 5px 0;
+  }
+
+  
+/* Increase the size of the date input when hovering */
+input[type="date"]:hover { 
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */ 
 }
+  
