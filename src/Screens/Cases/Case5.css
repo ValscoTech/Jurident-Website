@@ -27,7 +27,9 @@
   /* Style for the button */
   .custom-button {
     background-color: #c99f4a;
-    color: white;
+    
+    color: #c99f4a;
+  
     font-size: 24px;
     padding: 10px 20px;
     border: none;
