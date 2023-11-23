@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import './Caseview.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'; 
+import { setFormData, getFormData } from  '../Cases/Case5data.js';  
 
 const modules = {
   toolbar: [
-    [{ 'font': [] }],
+      [{ 'font': [] }],
     [{ 'size': ['small', false, 'large', 'huge'] }],  
     ['bold', 'italic', 'underline', 'strike'],        
     [{ 'color': [] }, { 'background': [] }],          
@@ -25,26 +26,43 @@ const modules = {
 
 const Caseview = () => {
   const location = useLocation();
-  const formData = location.state.formData;
+  const [formData, setFormDataState] = useState(location.state.formData || getFormData());
   const [noteContent, setNoteContent] = useState('');
 
   const handleSave = () => {
-    console.log("Saved data:", formData, noteContent);
-    // Implement save logic here
+    // Function to extract text from HTML
+    const getTextFromHtml = (html) => {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      return tempDiv.textContent || tempDiv.innerText || "";
+    };
+
+    // Extract plain text from noteContent
+    const plainText = getTextFromHtml(noteContent);
+
+    // Update formData with plain text
+    const updatedFormData = { ...formData, casenotes: plainText };
+    setFormData(updatedFormData);
+    setFormDataState(updatedFormData);
+
+    console.log("Saved data:", updatedFormData);
   };
 
   return (
+    
     <div className="app-container">
       <div className="editor-container">
         <div className="editor-header">
           <h1>Add Notes</h1>
         </div>
         <ReactQuill 
+        
           value={noteContent} 
           onChange={setNoteContent} 
           modules={modules}
         />
         <button className="save-button" onClick={handleSave}>SAVE</button>
+        {/* <DisplayCaseNotes content={formData.casenotes} /> */}
       </div>
       <div className="details-container">
         <div className="details-header">  
@@ -63,6 +81,7 @@ const Caseview = () => {
         </div>
       </div>
     </div>
+    
   );
 }
 
