@@ -3,7 +3,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Case5.css';
-import { setFormData, getFormData } from '../Cases/Case5data';
+import { setFormData, getFormData } from '../Cases/Case5data'; 
+
 
 const Case5 = () => {
   const navigate = useNavigate();
@@ -20,10 +21,10 @@ const Case5 = () => {
     navigate('/caseview', { state: { formData: currentFormData } });
   };
   return ( 
-    <div> 
-      <div className="form-container form1-container"> 
-        <form onSubmit={handleSubmit}>
-          <h2>Add a new case</h2>
+    <div > 
+      <div className="form-container form1-container">  
+        <form onSubmit={handleSubmit}> 
+          <h2><b>ADD NEW CASE </b></h2>  <br></br>
           <h3>Enter the Party Details</h3> 
           {/* Case Number */}
           <b>Case No</b> <br />
@@ -51,44 +52,32 @@ const Case5 = () => {
           {/* Party Contact Number */}
           <b>Party Contact Number</b><br />
           <input type="text" name="partycontact1" size="80" placeholder="Enter Party Contact Number" onChange={handleInputChange} /> <br /> <br />
-          <button type="submit" className="custom-button">Add Case Note</button>
-        </form>
-      </div>
-
-       
-
-
-      <div className="form-container form2-container">
-        <form>
+          
+          
           <h2>Enter Adverse Party Details</h2>
           <b>Adverse Party Name</b> <br />
-          <input type="text" id="caseno2" size="80" placeholder="Enter Adverse Party Name" /> <br /> <br />
+          <input type="text" name="adversePartyName" size="80" placeholder="Enter Adverse Party Name" onChange={handleInputChange} /> <br /> <br />
           <b>Adverse Party Contact Number</b><br />
-          <input type="text" id="casename2" size="80" placeholder="Enter Adverse Party Contact Number " /> <br /> <br />
+          <input type="text" name="adversePartyContact" size="80" placeholder="Enter Adverse Party Contact Number " onChange={handleInputChange} /> <br /> <br />
           <b>Adverse Party Lawyer Name</b> <br />
-          <input type="text" id="casename2" size="80" placeholder="Enter Adverse Party Name " /> <br /> <br />
-          <b>Adverse Party Lawyer Contact Number</b><br />
-          <input type="text" id="casename2" size="80" placeholder="Enter Adverse Party Lawyer Number " /> <br /> <br />
+          <input type="text" name="adversePartyLawyerName" size="80" placeholder="Enter Adverse Party Name " onChange={handleInputChange} /> <br /> <br />
+          <b>Adverse Party Lawyer Contact Number</b><br /> 
+          <input type="text" name="adversePartyLawyerContact" size="80" placeholder="Enter Adverse Party Lawyer Number "  onChange={handleInputChange}/> <br /> <br />
           
 
           <div style={{ textAlign: 'right' }}> 
-            <button className="custom-button" type="button" name="addCaseNote">Add Case Note</button>
-          </div>
-
-
-
-
-
-
-              
-         
+          <button type="submit" className="custom-button" color='white'>Add Case Note</button>
+          </div>         
           
-          
+        
         </form>
+      </div>
+      <div className="form-container form2-container"> 
+        
       </div>
     </div>
   );
 };
 
-export default Case5;  
+export default Case5;   
  
