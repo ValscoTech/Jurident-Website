@@ -20,9 +20,6 @@ const LoginForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const [errorCode, setError] = useState({ email: "", pass: "" });
   const { email, password } = formFields;
-
-  // console.log(formFields);
-
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
     setError({
@@ -45,7 +42,6 @@ const LoginForm = () => {
         email,
         password
       );
-      console.log(response);
       resetFormFields();
     } catch (error) {
       switch (error.code) {
@@ -68,17 +64,33 @@ const LoginForm = () => {
           });
           break;
         default:
-          console.log(error.code);
+          alert(error.code);
       }
     }
   };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    // console.log(name, value);
     setFormFields({ ...formFields, [name]: value });
   };
 
+  const handleInputBlur = (e) => {
+    const { name, value } = e.target;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isValidFormat = emailRegex.test(value);
+    if (name === "email" && !isValidFormat) {
+      setError((p) => ({ ...p, email: "Invalid Email Format" }));
+    }
+    if(name === "email" && isValidFormat){
+      setError((p)=>({...p,email:""}))
+    }
+    if(name === "password" && value.length <8){
+      setError((p) => ({ ...p, pass: "A minimum 8 character length is required" }));
+    }
+    if(name === "password" && value.length >=8){
+      setError((p)=>({...p,pass:""}))
+    }
+  };
   return (
     <>
       <Helmet>
@@ -87,7 +99,9 @@ const LoginForm = () => {
       </Helmet>
 
       <form id="form" className="w-1/3 m-auto gap-8" onSubmit={handleSubmit}>
-        <h3 id="login-intro" className="mb-8">Log into your account</h3>
+        <h3 id="login-intro" className="mb-8">
+          Log into your account
+        </h3>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2 dark:text-white"
@@ -101,12 +115,11 @@ const LoginForm = () => {
             type="text"
             placeholder="johndoe@gmail.com"
             onChange={handleChange}
+            onBlur={handleInputBlur}
             name="email"
             value={email}
           />
-          <div className="pb-4 text-red-600">
-            {errorCode.email}
-          </div>
+          <div className="pb-4 text-red-600">{errorCode.email}</div>
         </div>
         <div className="mb-6">
           <label
@@ -121,18 +134,13 @@ const LoginForm = () => {
             type="password"
             placeholder="* * * * *"
             onChange={handleChange}
+            onBlur={handleInputBlur}
             name="password"
             value={password}
           />
-          <div className="pb-4 text-red-600">
-            {errorCode.pass}
-          </div>
+          <div className="pb-4 text-red-600">{errorCode.pass}</div>
           <div id="rememberMe">
-            <input
-              className="border rounded"
-              type="checkbox"
-              id="rememberMe"
-            />
+            <input className="border rounded" type="checkbox" id="rememberMe" />
             <div id="rememberText">
               <p id="rememberMain">Remember Me</p>
               <p id="rememberSub">Save my login details for next time</p>

@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border border-gray-600"></div>
-        <div className="text-2xl mt-6 flex justify-between">
+        <div className="text-2xl mt-6 flex p-3 justify-between">
           <h3 className="font-light">Copyrights</h3>
           <h3>India</h3>
         </div>
