@@ -15,6 +15,8 @@ import Profile from './Components/ProfilePage/Profile';
 //import Cases from './Screens/Cases/Cases';
 import Caseview from './Screens/Cases/Caseview';
 import Case5 from './Screens/Cases/Case5';
+import Blog  from "./Components/Blogf/Blog";
+import  Blogs  from "./Screens/Blogs/Blogs";
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
           
           <Route path="/services" element={<Case5/>  } />
           <Route path="/caseview" element={ <Caseview/> } />
+          <Route exact path="/Blogs" element={<Blogs />} />
+					<Route exact path="/Blogs/:topic" element={<Blog />} />
 
          </Routes>
   </Router>
