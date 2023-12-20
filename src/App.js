@@ -17,6 +17,8 @@ import Caseview from './Screens/Cases/Caseview';
 import Case5 from './Screens/Cases/Case5';
 import Blog  from "./Components/Blogf/Blog";
 import  Blogs  from "./Screens/Blogs/Blogs";
+import About from './Screens/AboutUs/About';
+import ContactPage from './Screens/Contactus/ContactPage';
 
 const App = () => {
   return (
@@ -30,6 +32,7 @@ const App = () => {
 
           <Route path="/Profile" element={<Details />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+
           <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
           <Route path="/ChangePassword" element={<ChangePassword/>} />
           <Route path="/cases" element={<Navigate replace to="/cases" />} /> {/* Redirect from '/' to '/cases' */}
@@ -39,6 +42,10 @@ const App = () => {
           <Route exact path="/Blogs" element={<Blogs />} />
 					<Route exact path="/Blogs/:topic" element={<Blog />} />
 
+          <Route path="/About" element={ <About/> } />
+
+          
+          <Route path="/contact" element={ <ContactPage/> } />
          </Routes>
   </Router>
   )

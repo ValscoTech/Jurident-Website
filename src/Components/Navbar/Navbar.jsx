@@ -70,20 +70,7 @@ function Navbar() {
                   Blogs
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/News"
-                  className={({ isActive }) =>
-                    "nav-links " +
-                    (isActive
-                      ? " text-[#09bef0]"
-                      : "text-black dark:text-white")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  News
-                </NavLink>
-              </li>
+           
               <li className="nav-item">
                 <NavLink
                   to="/About"
@@ -98,6 +85,24 @@ function Navbar() {
                   About us
                 </NavLink>
               </li>
+
+
+              {currentUser && (
+                <li className="nav-item">
+                  <NavLink
+                    to="/profile"
+                    className={({ isActive }) =>
+                      "nav-links " +
+                      (isActive
+                        ? " text-[#09bef0]"
+                        : "text-black dark:text-white")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Profile
+                  </NavLink>
+                </li>
+              )}
               <li className="nav-item">
                 {currentUser ? (
                   <NavLink
