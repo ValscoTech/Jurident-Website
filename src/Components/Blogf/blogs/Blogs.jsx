@@ -7,48 +7,48 @@ import { BsImage } from "react-icons/bs";
 
 const Blogs = () => {
   return (
-    <div className="d-flex mx-2 px-4 mt-5">
-      <div className="d-flex flex-column">
+    <div className="flex mx-2 px-4 mt-5">
+      <div className="flex flex-col">
         {BlogData.map((blog) => (
           <BlogItem key={blog.id} blog={blog} />
         ))}
       </div>
 
-      <div className="d-flex flex-column blog-side-section">
+      <div className="flex flex-col">
         <div className="mb-5">
-          <p className="bold-content">Discover more</p>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          <p className="font-bold">Discover more</p>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Crime
-          </btn>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          </button>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Constitution
-          </btn>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          </button>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Legal
-          </btn>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          </button>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Murder
-          </btn>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          </button>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Trial
-          </btn>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          </button>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Lorem Ipsum
-          </btn>
-          <btn className="btn border border-dark rounded-pill mx-2 my-2">
+          </button>
+          <button className="btn border border-dark rounded-pill mx-2 my-2">
             Lorem Ipsum
-          </btn>
+          </button>
         </div>
         <div className="blog-img-end text-center pt-5 mb-5">
           <BsImage />
         </div>
         <div>
-          <p className="bold-content">{BlogData[1].content}</p>
-          <div className="d-flex justify-content-between">
-            <div className="d-flex">
-              <div className="lighter-text-content">{BlogData[1].timing}</div>
+          <p className="font-bold">{BlogData[1].content}</p>
+          <div className="flex justify-between">
+            <div className="flex">
+              <div className="text-sm">{BlogData[1].timing}</div>
               <span className="px-2"></span>
-              <p className="bold-content text-dark">{BlogData[1].date}</p>
+              <p className="font-bold text-black">{BlogData[1].date}</p>
             </div>
             <a href="!#">
               <MdOutlineBookmarkAdd />

@@ -3,13 +3,14 @@ import React from "react";
 import "./Login.css";
 import LoginForm from "../../../Components/Login/LoginForm";
 import LoginInfo from "../../../Components/Login/LoginInfo";
+import Layout from "../../Layout";
 
 const Login = () => {
   return (
-    <div id="main">
+    <Layout id="main">
       <LoginForm />
       <LoginInfo />
-    </div>
+    </Layout>
   );
 };
 

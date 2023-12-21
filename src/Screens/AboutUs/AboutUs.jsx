@@ -1,17 +1,13 @@
 import React from "react";
-import lawyer from "./Lawyerpic.jpeg"
+import lawyer from "./Lawyerpic.jpeg";
 import "./Aboutus.css";
-
-
+import Layout from "../Layout";
 
 const Aboutus = () => {
   return (
     <>
-     
-
-        <title>ABoutUs Page</title>
-        <meta name="description" content="About Jurident and it's objective" />
-     
+      <title>ABoutUs Page</title>
+      <meta name="description" content="About Jurident and it's objective" />
 
       <div className="container1">
         <div className="col1">
@@ -24,14 +20,13 @@ const Aboutus = () => {
             passionate about [describe your mission or purpose]. Our goal is to
             [describe what you aim to achieve]. At [your company/organization
             name], we strive to provide [describe your products/services]. Our
-            team is committed to [describe your core values or principles]. If you
-            have any questions or would like to learn more about us, feel free to
-            contact us at our email id. If you have any more questions, head on to
-            the faq section!
+            team is committed to [describe your core values or principles]. If
+            you have any questions or would like to learn more about us, feel
+            free to contact us at our email id. If you have any more questions,
+            head on to the faq section!
           </p>
         </div>
       </div>
-
     </>
   );
 };
