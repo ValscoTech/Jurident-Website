@@ -18,34 +18,34 @@ const Navbar = () => {
         </div>
       </div>
       <hr style={line_style} />
-      <nav className="flex md:flex md:flex-grow justify-end space-x-1 pb-4">
-        <ul className="nav flex-row">
-          <li className="nav-item">
+      <nav className="flex md:flex md:flex-grow  justify-center space-x-1 pb-4">
+        <ul className="nav flex flex-row justify-between sm:gap-10 min-[420px]:gap-3">
+          <li className="">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               My Feed
             </a>
           </li>
-          <li className="nav-item">
+          <li className="">
             <Link to="/" className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               All Blogs
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Top Blogs
             </a>
           </li>
-          <li className="nav-item">
+          <li className="">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Trending
             </a>
           </li>
-          <li className="nav-item">
+          <li className="">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Bookmarks
             </a>
           </li>
-          <li className="nav-item">
+          <li className="">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Unread
             </a>
