@@ -12,13 +12,12 @@ const Footer = () => {
             <div className="text-xl flex flex-col gap-4">
               <Link to="/">Our Services</Link>
 
-              <Link to="/">News</Link>
 
-              <Link to="/">Blog</Link>
+              <Link to="/blogs">Blog</Link>
 
               <Link to="/">Terms and Conditions</Link>
 
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/PrivacyPolicy">Privacy Policy</Link>
 
               <Link to="/">Support</Link>
 

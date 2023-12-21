@@ -22,10 +22,17 @@ const Case5 = () => {
   };
   return ( 
     <div > 
-      <div className="form-container form1-container">  
-        <form onSubmit={handleSubmit}> 
-          <h2><b>ADD NEW CASE </b></h2>  <br></br>
-          <h3>Enter the Party Details</h3> 
+      <div >  
+
+      <br></br>
+      <h1 className='hhh'><b>ADD NEW CASE </b></h1>  
+        <form onSubmit={handleSubmit} className="form-container "> 
+
+      
+          <div className='firsthalf'>  
+
+          <h2> <b> Enter the Party Details</b></h2> 
+          <br></br>
           {/* Case Number */}
           <b>Case No</b> <br />
           <input type="text" name="caseno1" size="80" placeholder="Enter Case Number" onChange={handleInputChange} /> <br /> <br /> 
@@ -54,7 +61,15 @@ const Case5 = () => {
           <input type="text" name="partycontact1" size="80" placeholder="Enter Party Contact Number" onChange={handleInputChange} /> <br /> <br />
           
           
-          <h2>Enter Adverse Party Details</h2>
+          
+          </div>
+
+
+          <div className='firsthalf2'>
+        
+
+          <h2> <b> Enter Adverse Party Details</b></h2> 
+          <br></br>
           <b>Adverse Party Name</b> <br />
           <input type="text" name="adversePartyName" size="80" placeholder="Enter Adverse Party Name" onChange={handleInputChange} /> <br /> <br />
           <b>Adverse Party Contact Number</b><br />
@@ -64,17 +79,23 @@ const Case5 = () => {
           <b>Adverse Party Lawyer Contact Number</b><br /> 
           <input type="text" name="adversePartyLawyerContact" size="80" placeholder="Enter Adverse Party Lawyer Number "  onChange={handleInputChange}/> <br /> <br />
           
-
-          <div style={{ textAlign: 'right' }}> 
-          <button type="submit" className="custom-button" color='white'>Add Case Note</button>
-          </div>         
+          <div > 
+          <button type="submit" className="custom-button" >Add Case Note</button>
+          </div> 
+        
+          </div>
+        
+                 
           
-        
+       
+
+         
         </form>
+
+     
+      
       </div>
-      <div className="form-container form2-container"> 
-        
-      </div>
+      
     </div>
   );
 };

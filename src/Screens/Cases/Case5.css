@@ -1,52 +1,23 @@
-/*Style.css */
 
-/* Style for Form 1 */
-.form1-container {
-    display: inline-block;
-    background-color: #fafafa;
-    padding: 100px;
-    font-size: 30px;
-    border-radius: 10px;
-  }
-  
-  /* Style for Form 2 */
-  .form2-container {
-    display: inline-block;
-    background-color: #fafafa;
-    padding: 20px;
-    font-size: 31px;
-    border-radius: 10px;
-  }
-  
-  /* Additional styles for form containers (adjust margins as needed) */
-  .form-container {
-    margin-right: 25px;
-    margin-bottom: 20px;
-  }
-  
   /* Style for the button */
-  .custom-button {
-    background-color: #c99f4a;
-    
-    color: #c99f4a;
   
-    font-size: 24px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
+  .rod{
+    text-align: center;
+    align-items: center;
   }
+ 
   
   /* Style for rounded input fields */
   input[type="text"],
   input[type="date"],
   select {
     /* font-size: 10px; */
-    border: 6px solid #ccc;
-    border-radius: 10px; /* Add border radius for rounded edges */
-    padding: 8px;
-    width: 98%; 
-    margin: 5px 0;
+    border: 2px solid #222020;
+    border-radius: 5px; /* Add border radius for rounded edges */
+    padding: 2px;
+width: 100%;
+
+  
   }
 
   
@@ -56,3 +27,73 @@ input[type="date"]:hover {
   transition: transform 0.2s ease; /* Add a smooth transition effect */ 
 }
   
+
+
+/* Case5.css */
+
+
+
+/* Add any additional styling as needed */
+
+
+
+
+
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column for smaller screens */
+  padding: 20px;
+}
+
+.firsthalf,
+.firsthalf2 {
+  width: 100%; /* Take full width on smaller screens */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  /* Add some space between the two halves */
+}
+
+
+
+.hhh {
+  text-align: center;
+  margin-bottom: 20px; /* Add some space below the h1 element */
+}
+
+
+.custom-button {
+  background-color: #4b4841;
+  
+  color: #282018;
+
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+.custom-button:hover{
+  background-color: #d58d8d;
+}
+
+
+
+
+@media only screen and (min-width: 786px) {
+  .form-container {
+    flex-direction: row; /* Revert to row layout for larger screens */
+  }
+
+  .firsthalf,
+  .firsthalf2 {
+    width: 48%; /* Adjust the width for larger screens */
+  }
+
+  .firsthalf {
+    margin-right: 2%; /* Add margin between the two halves */
+  }
+}

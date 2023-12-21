@@ -19,6 +19,7 @@ import Blog  from "./Components/Blogf/Blog";
 import  Blogs  from "./Screens/Blogs/Blogs";
 import About from './Screens/AboutUs/About';
 import ContactPage from './Screens/Contactus/ContactPage';
+import PrivacyPolicy from './Screens/PrivacyPolicy/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="/About" element={ <About/> } />
 
           
+          <Route path="/PrivacyPolicy" element={ <PrivacyPolicy/> } />
           <Route path="/contact" element={ <ContactPage/> } />
          </Routes>
   </Router>

@@ -132,7 +132,7 @@ function Navbar() {
                   </NavLink>
                 )}
               </li>
-              <li className="nav-item flex align-middle ">
+              <li className="nav-item  ">
                 <ModeBtn />
               </li>
             </ul>

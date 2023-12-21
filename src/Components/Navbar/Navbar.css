@@ -119,6 +119,7 @@
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
+    background-color: #09bef0 #bfbfff;
   }
 
   .nav-menu {
@@ -131,10 +132,11 @@
     opacity: 1;
     transition: all 0.5s ease;
 
+
   }
 
   .nav-menu.active {
-    background-color: #09bef0 #bfbfff;
+    background-color: rgb(165, 157, 157);
 
     left: 0;
     opacity: 1;
