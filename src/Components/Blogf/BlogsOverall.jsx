@@ -18,7 +18,7 @@ const Blogs = () => {
   <div className="mb-5 w-full md:w-1/2 px-4 md:px-24 pr-4 md:pr-32">
     <p className="bold-content pb-8 lg:pr-48 lg:px-16">Discover more</p>
     {/* <div className="flex flex-wrap gap-2 md:gap-16"> */}
-    <div className="flex flex-wrap gap-16 lg:pr-48 lg:px-16">
+    <div className="flex flex-row flex-wrap gap-16 lg:pr-48 lg:px-16 md:px-12">
             <div className=" col-auto mb-2">
               <button className="ml-3 mr-3 btn border border-dark rounded-pill btn-block">Crime</button>
             </div>
