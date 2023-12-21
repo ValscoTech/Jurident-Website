@@ -18,34 +18,34 @@ const Navbar = () => {
         </div>
       </div>
       <hr style={line_style} />
-      <nav className="mx-auto pb-4">
-        <ul className="nav nav-fill flex-col md:flex-row">
-          <li className="nav-item pb-10">
+      <nav className="flex md:flex md:flex-grow justify-end space-x-1 pb-4">
+        <ul className="nav flex-row">
+          <li className="nav-item">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               My Feed
             </a>
           </li>
-          <li className="nav-item pb-10">
+          <li className="nav-item">
             <Link to="/" className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               All Blogs
             </Link>
           </li>
-          <li className="nav-item pb-10">
+          <li className="nav-item">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Top Blogs
             </a>
           </li>
-          <li className="nav-item pb-10">
+          <li className="nav-item">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Trending
             </a>
           </li>
-          <li className="nav-item pb-10">
+          <li className="nav-item">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Bookmarks
             </a>
           </li>
-          <li className="nav-item pb-10">
+          <li className="nav-item">
             <a className="nav-link bold-content text-dark text-xs md:text-base" href="!#">
               Unread
             </a>
