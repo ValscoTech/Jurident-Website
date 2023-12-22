@@ -31,14 +31,14 @@ const Hero2 = () => {
             alt="IMAGE1"
           />
           <div className="absolute overflow-visible top-0 left-9 right-0 bottom-0 flex flex-col gap-11 justify-between pt-[12px]">
-            {/* <div>
+            <div>
               <h1 className="text-[40px] font-semibold text-white mb-2">
                 Everything in one place
               </h1>
               <p className="max-w-[280px] text-[22px] text-white">
                 Add your personal notes to any case you'd prefer
               </p>
-            </div> */}
+            </div>
 
             <div className="flex flex-wrap gap-4 mb-4 sm:gap-8">
               <button className="px-4 sm:px-8 py-2 bg-blue-600 rounded-3xl">
