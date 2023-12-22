@@ -68,12 +68,12 @@ const Caseview = () => {
           </button>
           {/* <DisplayCaseNotes content={formData.casenotes} /> */}
         </div>
-        <div className="details-container">
-          <div className="details-header">
+        <div className="details-container dark:text-black">
+          <div className="details-header font-bold text-3xl mb-4">
             <h1>Case Details</h1>
           </div>
           <div className="details-content">
-            <h2>Case Details</h2>
+            {/* <h2>Case Details</h2> */}
             <aside>
               {/* Map through formData to display details */}
               {Object.entries(formData).map(([key, value]) => (

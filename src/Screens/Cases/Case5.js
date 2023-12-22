@@ -28,7 +28,7 @@ const Case5 = () => {
           <b>ADD NEW CASE </b>
         </h1>
         <form onSubmit={handleSubmit} className="text-black form-container ">
-          <div className="firsthalf">
+          <div className="firsthalf dark:text-white dark:bg-[#433952]">
             <h2>
               {" "}
               <b> Enter the Party Details</b>
@@ -99,7 +99,7 @@ const Case5 = () => {
             <br /> <br />
           </div>
 
-          <div className="firsthalf2">
+          <div className="firsthalf2 dark:text-white dark:bg-[#433952]">
             <h2>
               {" "}
               <b> Enter Adverse Party Details</b>
@@ -143,11 +143,12 @@ const Case5 = () => {
               onChange={handleInputChange}
             />{" "}
             <br /> <br />
-            <div>
-              <button type="submit" className="custom-button">
-                Add Case Note
-              </button>
-            </div>
+            <button
+              type="submit"
+              className="custom-button bg-[#C99F4A] text-white m-auto border-2 border-solid border-[#C99F4A]"
+            >
+              Add Case Note
+            </button>
           </div>
         </form>
       </div>

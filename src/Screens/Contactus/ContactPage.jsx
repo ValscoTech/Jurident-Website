@@ -44,7 +44,7 @@ function ContactPage() {
       <div>
         <h1 className="container title mt-10">CONTACT US </h1>
         <div className="container " style={{ width: "100%" }}>
-          <div className="text" style={{ width: "80%", color: "black" }}>
+          <div className="text w-[80%] dark:text-white">
             <p>
               Let’s Connect: We’re here to help, and we’d love to hear from you!
               Whether you have a question, a comment, or just want to chat, you
