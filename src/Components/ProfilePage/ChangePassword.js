@@ -7,8 +7,8 @@ const ChangePassword = () => {
     <div className="md:mx-[260px] mx-[25px] ">
       <div className="flex flex-col md:flex-row gap-12 ">
         <Profile />
-        <div className=" md:w-[650px] md:h-[700px] w-[380px] h-[750px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 px-[40px]">
-          <h1 className=" font-bold text-lg mt-[12px]">
+        <div className=" md:w-[650px] md:h-[700px] w-[350px] h-[750px] mr-[0 px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 px-[40px]">
+          <h1 className=" font-bold text-lg mt-[10px]">
             Home {">"} Change Password
           </h1>
           <h1>
@@ -48,10 +48,10 @@ const ChangePassword = () => {
             </Link>
           </div>
           <div className=" w-[150px] h-[50px] md:ml-[200px] ml-[60px] border-solid rounded-3xl border-2 border-orange-500 hover:bg-orange-200 font-semibold mt-[20px]">
-            <button className=" w-full h-full ">Save Changes</button>
+            <button className=" w-full h-full ">Save</button>
           </div>
           <div className=" w-[150px] h-[50px] md:ml-[200px] ml-[60px] border-solid rounded-3xl border-2 border-orange-500 hover:bg-orange-200 font-semibold mt-[20px]">
-            <button className=" w-full h-full ">Discard Changes</button>
+            <button className=" w-full h-full ">Discard</button>
           </div>
         </div>
       </div>
