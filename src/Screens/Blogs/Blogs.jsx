@@ -5,15 +5,16 @@ import Trending from "../../Components/Blogf/Trending";
 import BlogsOverall from "../../Components/Blogf/BlogsOverall";
 import "./Blogs.css";
 import Navbar from "../../Components/Blogf/layout/Navbar";
+import Layout from "../Layout";
 
 const Blogs = () => {
   return (
-    <div>
+    <Layout>
       <Navbar />
       <Search />
       <Trending />
       <BlogsOverall />
-    </div>
+    </Layout>
   );
 };
 

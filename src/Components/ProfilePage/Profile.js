@@ -1,38 +1,69 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Profile=()=>{
+const Profile = () => {
   return (
-    <>
-    <div className=" w-[300px] h-[700px] rounded-xl md:ml-[0px] ml-[40px]  ">
-        <h1 className="text-5xl font-semibold text-gray-500 my-[20px] md:text-left text-center">PROFILE</h1>
-        <div className="h-[700px] w-[300px] rounded-xl border-2 border-orange-300 bg-slate-100">
-            <div className=" w-full h-[200px] pt-3">
-                <div className=" rounded-full border-2 border-orange-600 w-[180px] h-[180px] pl-[12px] pt-[20px] ml-[50px] " >
-                    <img  src="./Images/profile.svg" alt="profile.jpg"></img>
-                </div>
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="w-96 ml-8 md:ml-0">
+        <h1 className="text-4xl font-semibold text-gray-600 mb-8 md:text-left text-center">
+          PROFILE
+        </h1>
+        <div className="bg-gray-100 rounded-xl border-2 border-orange-300 p-6">
+          <div className="flex items-center justify-center">
+            <div className="w-36 h-36 border-4 border-orange-300 rounded-full flex items-center justify-center">
+              <img
+                src="./Images/profile.svg"
+                alt="profile"
+                className="w-28 h-28"
+              />
             </div>
-            <hr className="h-[3px] w-[250px] mx-[20px] mt-[10px] bg-orange-300 "></hr>
-            <div className="flex flex-col gap-3 mx-[20px] mt-[10px] font-semibold md:text-left text-center">
-                <h1>Language</h1>
-                <h1><Link to="/TermsAndCondition">Terms And Conditions</Link></h1>
-                <h1><Link to="/AboutUs">About Us</Link></h1>
-                <h1>Dark Mode</h1>
-                <h1>Notifications</h1>
-                <h1>Contact Us</h1>
-                <h1>Support Chat</h1>
-                <h1>Super Chat</h1>
-                <h1>FAQ</h1>
-                <h1>Feedback Page</h1>
+          </div>
+          <hr className="my-6 border-orange-300" />
+          <div className="flex font-Poppins flex-col gap-4">
+            <Link to="/" className="text-xl font-semibold">
+              Language
+            </Link>
+            <Link to="/TermsAndCondition" className="text-xl font-semibold">
+              Terms And Conditions
+            </Link>
+            <Link to="/AboutUs" className="text-xl font-semibold">
+              About Us
+            </Link>
+            <div className="justify-between">
+              <Link to="/" className="text-xl font-semibold">
+                Dark Mode
+              </Link>
             </div>
-            <hr className="h-[3px] w-[250px] mx-[20px] mt-[10px] bg-orange-300 "></hr>
-            <div>
-                <button className=" w-[250px] h-[50px] bg-orange-400 rounded-xl mt-[30px] mx-[20px] font-semibold hover:bg-orange-300">Log Out</button>
-            </div>
-        </div>
-    </div>
-    </>
-  )
-}
 
-export default Profile
+            <Link to="/" className="text-xl font-semibold">
+              Notifications
+            </Link>
+            <Link to="/" className="text-xl font-semibold">
+              Contact Us
+            </Link>
+            <Link to="/" className="text-xl font-semibold">
+              Support Chat
+            </Link>
+            <Link to="/" className="text-xl font-semibold">
+              Super Chat
+            </Link>
+            <Link to="/" className="text-xl font-semibold">
+              FAQ
+            </Link>
+            <Link to="/" className="text-xl font-semibold">
+              Feedback Page
+            </Link>
+          </div>
+          <hr className="my-6 border-orange-300" />
+          <div className="flex justify-center">
+            <button className="w-full md:w-80 h-12 bg-orange-400 rounded-lg font-semibold hover:bg-orange-300 text-white">
+              Log Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;

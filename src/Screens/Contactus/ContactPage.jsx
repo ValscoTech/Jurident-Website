@@ -6,6 +6,7 @@ import './ContactPage.css'
 import { MdOutlineMessage } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
+import Layout from "../Layout";
 
 
 function ContactPage() {
@@ -41,7 +42,7 @@ function ContactPage() {
   }
 
   return (
-    <div className="container1" style={{ width: "100%" }}>
+    <Layout className="container1" style={{ width: "100%" }}>
       <div style={{ width: "125%" }}>
         <h1 className="container title mt-10">CONTACT US </h1>
         <div className="container " style={{ width: "100%" }} >
@@ -173,7 +174,7 @@ function ContactPage() {
         </div>
       </div>
       
-    </div>
+    </Layout>
   );
 }
     

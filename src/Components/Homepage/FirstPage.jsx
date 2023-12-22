@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { SlLocationPin } from "react-icons/sl";
-import BG from "../../Assets/HomePage/first_bg.png";
 import Video from '../../Assets/HomePage/HomeVid.mp4'
 
 const FirstPage = () => {

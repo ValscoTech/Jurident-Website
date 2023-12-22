@@ -1,19 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import Faq from '../../Components/FAQS/Faq'
-import Aboutus from './AboutUs'
-
-
+import Faq from "../../Components/FAQS/Faq";
+import Aboutus from "./AboutUs";
+import Layout from "../Layout";
 
 const About = () => {
   return (
-    <div>
-<Aboutus/>
-  <Faq/>
-    
-    
-    </div>
-  )
-}
+    <Layout>
+      <Aboutus />
+      <Faq />
+    </Layout>
+  );
+};
 
-export default About
+export default About;

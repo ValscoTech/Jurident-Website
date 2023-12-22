@@ -3,15 +3,14 @@ import { GrTwitter, GrFacebook, GrInstagram } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <div className="bg-white-900 font-gray">
-      <div className="container mx-auto py-12">
+    <div className="bg-white-900font-gray">
+      <div className=" mx-auto py-12">
         <hr className="border-t border-gray-600" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-          <div className="p-6">
+          <div className="p-6 mx-2">
             <h1 className="text-4xl font-bold mb-6">JURIDENT</h1>
             <div className="text-xl flex flex-col gap-4">
               <Link to="/">Our Services</Link>
-
 
               <Link to="/blogs">Blog</Link>
 
