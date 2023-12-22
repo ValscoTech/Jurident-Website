@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "../../Assets/HomePage/4d3bb97d91b0e9b8785533e0b3fd79fc.png";
 import img2 from "../../Assets/HomePage/83708bb58714e127bf6bc5ecfaf0d2b5.png";
-import img3 from "../../Assets/HomePage/image 81.png";
+import img3 from "../../Assets/HomePage/image 5.png";
 import BG_RIBBON from "../../Assets/HomePage/bg-ribbion.png";
 import frame2 from "../../Assets/HomePage/16eb1abdbdc8ba568969d5037bff5543.png";
 import frame5 from "../../Assets/HomePage/a0b808cb7da08294a9aacaaffa61185d.png";
@@ -24,27 +24,24 @@ const Hero2 = () => {
         </h1>
         {/* 3 boxes part */}
 
-        <div className=" mb-3 mx-4 font-white rounded-3xl flex flex-col flex-wrap shadow-md bg-white relative">
+        <div className=" mb-3 mx-6 font-white rounded-3xl flex flex-col flex-wrap shadow-md bg-white relative">
           <img
             src={img3}
             className="w-full h-[26rem] rounded-3xl"
             alt="IMAGE1"
           />
           <div className="absolute overflow-visible top-0 left-9 right-0 bottom-0 flex flex-col gap-11 justify-between pt-[12px]">
-            <div>
+            {/* <div>
               <h1 className="text-[40px] font-semibold text-white mb-2">
                 Everything in one place
               </h1>
               <p className="max-w-[280px] text-[22px] text-white">
                 Add your personal notes to any case you'd prefer
               </p>
-            </div>
+            </div> */}
 
             <div className="flex flex-wrap gap-4 mb-4 sm:gap-8">
-              <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
-                <span className="px-5 text-white">Try it</span>
-              </button>
-              <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
+              <button className="px-4 sm:px-8 py-2 bg-blue-600 rounded-3xl">
                 <span className="px-5 text-white">Use now</span>
               </button>
             </div>
@@ -113,9 +110,9 @@ const Hero2 = () => {
 
       {/* lawyer images and text area  */}
 
-      <div className="font-poppins flex flex-col px-2 md:flex-row flex-wrap">
+      <div className="font-poppins flex flex-col md:flex-row flex-wrap px-2">
         {/* 1st */}
-        <div className="flex flex-col flex-wrap md:flex-row max-w-screen">
+        <div className="flex flex-wrap justify-center flex-row max-w-screen">
           <div className="rounded-[2.7rem] py-6 pl-1">
             <img
               src={frame1}
@@ -149,7 +146,7 @@ const Hero2 = () => {
           </div>
         </div>
         {/* 2nd */}
-        <div className="flex flex-col flex-wrap md:flex-row max-w-screen">
+        <div className="flex flex-wrap justify-center flex-row max-w-screen">
           <div className="md:w-1/2 border flex flex-col max-w-[469px] border-gray-600 p-4 my-4 md:mx-3 rounded-[30px]">
             <img
               src={vector}
@@ -183,7 +180,7 @@ const Hero2 = () => {
           </div>
         </div>
         {/* 3rd */}
-        <div className="flex flex-col flex-wrap md:flex-row max-w-screen">
+        <div className="flex flex-wrap justify-center flex-row max-w-screen">
           <div className="rounded-[2.7rem] py-6">
             <img
               src={frame6}
