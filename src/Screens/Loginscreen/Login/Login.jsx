@@ -8,12 +8,11 @@ import Layout from "../../Layout";
 const Login = () => {
   return (
     <div>
-    <div id="main">
-      <LoginForm />
-      <LoginInfo />
-    
+      <div id="main">
+        <LoginForm />
+        <LoginInfo />
       </div>
-      <Layout/>
+      <Layout />
     </div>
   );
 };

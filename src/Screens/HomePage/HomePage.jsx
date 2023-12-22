@@ -1,4 +1,4 @@
-import { Hero1, Hero2,Footer } from "../../Components/Homepage/index";
+import { Hero1, Hero2 } from "../../Components/Homepage/index";
 import Layout from "../Layout";
 
 const HomePage = () => {

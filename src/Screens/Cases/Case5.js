@@ -27,7 +27,7 @@ const Case5 = () => {
         <h1 className="hhh">
           <b>ADD NEW CASE </b>
         </h1>
-        <form onSubmit={handleSubmit} className="form-container ">
+        <form onSubmit={handleSubmit} className="text-black form-container ">
           <div className="firsthalf">
             <h2>
               {" "}
@@ -57,15 +57,15 @@ const Case5 = () => {
             <br /> <br />
             {/* Hearing Date */}
             <b>Hearing Date</b>
-            <br /> <br />
             <input
               type="date"
               name="hearingDate1"
               onChange={handleInputChange}
             />{" "}
             <br />
+            <br />
             {/* Court Name */}
-            <b>Court Name</b> <br /> <br />
+            <b>Court Name</b>
             <select name="courtName1" onChange={handleInputChange}>
               <option value="court0">Select Court Name</option>
               <option value="court1">Select Court Name1</option>

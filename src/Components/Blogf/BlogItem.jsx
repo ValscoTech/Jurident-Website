@@ -13,8 +13,7 @@ const BlogItem = ({ blog }) => {
           <div
             className="blog-img text-center p-5 mb-5"
             style={{ backgroundColor: "#f2f2f2" }} // Set your background color here
-          > 
-          </div>
+          ></div>
         </div>
       </div>
       <div className="md:w-2/3">

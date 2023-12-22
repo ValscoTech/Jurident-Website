@@ -1,44 +1,26 @@
+/* Style for the button */
 
-  /* Style for the button */
-  
-  .rod{
-    text-align: center;
-    align-items: center;
-  }
- 
-  
-  /* Style for rounded input fields */
-  input[type="text"],
-  input[type="date"],
-  select {
-    /* font-size: 10px; */
-    border: 2px solid #222020;
-    border-radius: 5px; /* Add border radius for rounded edges */
-    padding: 2px;
-width: 100%;
-
-  
-  }
-
-  
-/* Increase the size of the date input when hovering */
-input[type="date"]:hover { 
-  transform: scale(1.1); /* Increase the size by 10% on hover */
-  transition: transform 0.2s ease; /* Add a smooth transition effect */ 
+.rod {
+  text-align: center;
+  align-items: center;
 }
-  
+
+/* Style for rounded input fields */
+input[type="text"],
+input[type="date"],
+select {
+  /* font-size: 10px; */
+  border: 2px solid #222020;
+  border-radius: 5px; /* Add border radius for rounded edges */
+  padding: 2px;
+  width: 100%;
+}
+
 
 
 /* Case5.css */
 
-
-
 /* Add any additional styling as needed */
-
-
-
-
-
 
 .form-container {
   display: flex;
@@ -55,17 +37,14 @@ input[type="date"]:hover {
   /* Add some space between the two halves */
 }
 
-
-
 .hhh {
   text-align: center;
   margin-bottom: 20px; /* Add some space below the h1 element */
 }
 
-
 .custom-button {
   background-color: #4b4841;
-  
+
   color: #282018;
 
   font-size: 24px;
@@ -75,13 +54,9 @@ input[type="date"]:hover {
   cursor: pointer;
 }
 
-
-.custom-button:hover{
+.custom-button:hover {
   background-color: #d58d8d;
 }
-
-
-
 
 @media only screen and (min-width: 786px) {
   .form-container {

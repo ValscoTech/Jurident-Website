@@ -20,37 +20,28 @@ const Profile = () => {
             </div>
           </div>
           <hr className="my-6 border-orange-300" />
-          <div className="flex font-Poppins flex-col gap-4">
+          <div className="flex text-black font-Poppins flex-col gap-4">
             <Link to="/" className="text-xl font-semibold">
               Language
             </Link>
 
-          
-            
             <Link to="/AboutUs" className="text-xl font-semibold">
-              Profile 
+              Profile
             </Link>
-          
 
             <Link to="/" className="text-xl font-semibold">
               Notifications
             </Link>
 
             <Link to="/ChangePassword" className="text-xl font-semibold">
-            Password
-          </Link>
-             
-            <div to="/" className="text-xl font-semibold">
-            
-            <Mode_btn/> 
-          </div>
+              Password
+            </Link>
 
-          
-       
-         
+            <div to="/" className="text-xl font-semibold">
+              <Mode_btn />
+            </div>
           </div>
           <hr className="my-6 border-orange-300" />
-         
         </div>
       </div>
     </div>

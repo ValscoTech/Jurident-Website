@@ -43,7 +43,7 @@ const BlogIntro = () => {
         </nav>
       </div>
       <hr style={line_style} />
-      <nav className="p-4 mx-4 d-flex justify-content-between">
+      <nav className="p-4 mx-4 flex justify-between">
         <div>
           <a href="#">
             <FaThumbsUp size="1.5rem" class="p-0" />

@@ -1,115 +1,92 @@
-
-
-
-
-.title{
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 34px;
-    line-height: 40px;
-    color: #C99F4A;
-;
+.title {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 40px;
+  color: #c99f4a;
 }
-    
-    .text{
-        display: flex;
-        justify-content: space-between;
-        align-items: left;
-        margin-top: 100px;
 
-        
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-top: 100px;
 
-    
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
-    /* or 93% */
-    
-    
-    color: #000000;
-    }
-    
-    .form{
-        margin-top: 40px;
-    }
-    
-    .button{
-        display: flex;
-        align-items: center;
-    }
-    
-    .countp{
-        display: flex;
-    
-        justify-content: right;
-    }
-    .count{
-        color: black;
-    }
-    
-    .label{
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .text{
-        border-color: #000000;
-    }
-    
-    .btn{
-        display: flex;
-        width: 20%;
-        justify-content: center;
-    }
-    .btn2{
-        width: 45%;
-    }
-    
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 93% */
 
+  color: #000000;
+}
 
-    .container{
+.form {
+  margin-top: 40px;
+}
 
-     
-        margin-top: 4px;
-        margin-left: 7%;
-        margin-right: 7%;
-    }
+.button {
+  display: flex;
+  align-items: center;
+}
 
-    .btn{
+.countp {
+  display: flex;
 
-        display: flex;
-        flex-direction: row;
-    }
+  justify-content: right;
+}
+.count {
+  color: black;
+}
 
-    @media (max-width: 767px) {
-  
-  
-        .form{
-            width: 80%;
-        }
-     
-    
-      .map{
-        visibility: hidden;
-        
-        height: 10px;
-        width: 10px;
-      }
+.label {
+  display: flex;
+  align-items: flex-start;
+}
 
+.text {
+  border-color: #000000;
+}
 
-    
-      .container{
-    
-         
-        margin-top: 4px;
-        margin-left: 0%;
-        margin-right: 0%;
+.btn {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+.btn2 {
+  width: 45%;
+}
 
-        padding: 4px 24px;
-    }
-    
-      
-    }
+.container {
+  margin-top: 4px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: 80%;
+  }
+
+  .map {
+    visibility: hidden;
+
+    height: 10px;
+    width: 10px;
+  }
+
+  .container {
+    margin-top: 4px;
+    margin-left: 0%;
+    margin-right: 0%;
+
+    padding: 4px 24px;
+  }
+}
