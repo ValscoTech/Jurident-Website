@@ -34,7 +34,7 @@
     font-size: 1em;
     font-family: sans-serif;
     font-weight: normal;
-    text-align: right;
+    text-align: justify;
   }
   
   @media screen and (max-width: 700px) {
@@ -47,6 +47,6 @@
     }
     .para,
     .heading {
-      text-align: left;
+      text-align: justify;
     }
   }
