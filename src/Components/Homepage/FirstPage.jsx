@@ -14,7 +14,7 @@ const FirstPage = () => {
       window.removeEventListener("resize", updateDimension);
     };
   }, [screenSize]);
-  if (screenSize > 800) {
+  if (screenSize > 900) {
     return (
       <div className="relative ml-8 min-h-screen overflow-hidden w-full max-w-screen-xl flex flex-col md:flex-row ">
         {/* Left section */}
