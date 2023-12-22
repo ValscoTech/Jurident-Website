@@ -5,13 +5,12 @@ import BlogContent from "./BlogContent";
 import BlogIntro from "./BlogIntro";
 import Navbar from "./layout/Navbar";
 import { Helmet } from "react-helmet-async";
-
+import Layout from "../../Screens/Layout";
 
 const Blog = () => {
   return (
-    <div>
+    <Layout>
       <Helmet>
-
         <title>Blog Page</title>
         <meta name="description" content="Jurident Blog Page" />
       </Helmet>
@@ -22,7 +21,7 @@ const Blog = () => {
         <BlogContent />
         <Footer />
       </Fragment>
-    </div>
+    </Layout>
   );
 };
 

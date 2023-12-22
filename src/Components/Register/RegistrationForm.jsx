@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
@@ -19,6 +19,7 @@ const defaultFormFields = {
 };
 
 const RegistrationForm = () => {
+  const navigate = useNavigate();
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { firstName, lastName, email, password, confirmPassword } = formFields;
 
@@ -61,6 +62,7 @@ const RegistrationForm = () => {
 
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
+    navigate("/");
   };
 
   const signInWithFB = () => {

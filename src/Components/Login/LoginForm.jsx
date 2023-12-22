@@ -1,6 +1,6 @@
 import React from "react";
 // import { userSchema } from "../../Screens/Loginscreen/validations/LoginValidation";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   signInAuthUserWithEmailAndPassword,
   signInWithFacebook,
@@ -17,6 +17,8 @@ const defaultFormFields = {
 };
 
 const LoginForm = () => {
+  const navigate = useNavigate();
+
   const [formFields, setFormFields] = useState(defaultFormFields);
   const [errorCode, setError] = useState({ email: "", pass: "" });
   const { email, password } = formFields;
@@ -29,9 +31,11 @@ const LoginForm = () => {
   };
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
+    navigate("/");
   };
   const signInWithFB = () => {
     signInWithFacebook();
+    navigate("/");
   };
 
   const handleSubmit = async (event) => {
@@ -81,14 +85,17 @@ const LoginForm = () => {
     if (name === "email" && !isValidFormat) {
       setError((p) => ({ ...p, email: "Invalid Email Format" }));
     }
-    if(name === "email" && isValidFormat){
-      setError((p)=>({...p,email:""}))
+    if (name === "email" && isValidFormat) {
+      setError((p) => ({ ...p, email: "" }));
     }
-    if(name === "password" && value.length <8){
-      setError((p) => ({ ...p, pass: "A minimum 8 character length is required" }));
+    if (name === "password" && value.length < 8) {
+      setError((p) => ({
+        ...p,
+        pass: "A minimum 8 character length is required",
+      }));
     }
-    if(name === "password" && value.length >=8){
-      setError((p)=>({...p,pass:""}))
+    if (name === "password" && value.length >= 8) {
+      setError((p) => ({ ...p, pass: "" }));
     }
   };
   return (

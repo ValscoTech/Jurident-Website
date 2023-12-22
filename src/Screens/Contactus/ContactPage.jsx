@@ -45,10 +45,12 @@ function ContactPage() {
         <h1 className="container title mt-10">CONTACT US </h1>
         <div className="container " style={{ width: "100%" }}>
           <div className="text" style={{ width: "80%", color: "black" }}>
-            Let’s Connect: We’re here to help, and we’d love to hear from you!
-            Whether you have a question, a comment, or just want to chat, you
-            can reach out to us through the contact form on this page, or by
-            phone, email, or social media.
+            <p>
+              Let’s Connect: We’re here to help, and we’d love to hear from you!
+              Whether you have a question, a comment, or just want to chat, you
+              can reach out to us through the contact form on this page, or by
+              phone, email, or social media.
+            </p>
           </div>
           <button
             type="button"
