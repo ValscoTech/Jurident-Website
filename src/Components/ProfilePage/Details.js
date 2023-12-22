@@ -30,7 +30,7 @@ const Details = () => {
   ];
 
   return (
-    <Layout className="md:mx-[260px] mx-[25px]">
+    <Layout className="md:mx-[260px] text-black mx-[25px]">
       <div className=" flex flex-col md:flex-row justify-center pt-6">
         <Profile />
         <div className="md:w-[650px] ml-5 md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
