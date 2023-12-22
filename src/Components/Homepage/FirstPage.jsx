@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SlLocationPin } from "react-icons/sl";
-import Video from '../../Assets/HomePage/HomeVid.mp4'
+import Video from "../../Assets/HomePage/HomeVid.mp4";
 
 const FirstPage = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
@@ -50,7 +50,13 @@ const FirstPage = () => {
         {/* Right section */}
         <div className="absolute inset-0 w-[100%] md:w-1/2 z-0 top-10 lg:left-[33rem] md:left-[25rem] md:top-[1rem] lg:top-10">
           <div className="relative rounded-lg md:w-[400px] md:h-[600px]  lg:w-[700px] lg:h-[700px] sm:h-[100px]">
-            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover z-0"
+            >
               {/* Replace 'Video' with your video source */}
               <source src={Video} type="video/mp4" />
             </video>
@@ -58,7 +64,6 @@ const FirstPage = () => {
           </div>
         </div>
       </div>
-
     );
   } else {
     return (
@@ -79,7 +84,13 @@ const FirstPage = () => {
         </div>
 
         <div className="relative rounded-lg m-5 h-auto">
-          <video autoPlay loop muted playsInline className="relative inset-0 h-[400px] w-[400px] object-cover">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="relative inset-0 h-[400px] w-[400px] object-cover"
+          >
             {/* Replace 'Video' with your video source */}
             <source src={Video} type="video/mp4" />
           </video>
@@ -110,6 +121,5 @@ const FirstPage = () => {
     );
   }
 };
-
 
 export default FirstPage;

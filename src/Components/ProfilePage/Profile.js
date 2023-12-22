@@ -20,7 +20,7 @@ const Profile = () => {
             </div>
           </div>
           <hr className="my-6 border-orange-300" />
-          <div className="flex font-Poppins flex-col gap-4">
+          <div className="flex text-black font-Poppins flex-col gap-4">
             <Link to="/" className="text-xl font-semibold">
               Language
             </Link>

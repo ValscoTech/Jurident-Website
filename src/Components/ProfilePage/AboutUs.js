@@ -5,13 +5,11 @@ import Profile from "./Profile";
 
 const AboutUs = () => {
   return (
-    <Layout className="md:mx-260 mx-25">
-      <div className="flex flex-col justify-center md:flex-row gap-12">
+    <Layout className="md:mx-[260px] mx-[25px]">
+      <div className="flex flex-col justify-center md:flex-row mt-6">
         <Profile />
-        
-        <div className="md:w-[500px]   w-[360px] h-[600px] mr-[10 px] ml-[15px]  mt-[0px] md:mr-[0px] bg-slate-100 md:mt-[130px] rounded-xl border-2 border-orange-300 ">
-      
-        <h1 className="font-bold text-lg md:text-xl ml-4 mt-4">About Me</h1>
+        <div className="md:w-[650px] ml-5 md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
+          <h1 className="font-bold text-lg md:text-xl ml-4 mt-4">About Us</h1>
           <div className="mt-4 ml-4 mr-6">
             <div>
               <h1 className="font-semibold text-lg md:text-xl text-orange-600">

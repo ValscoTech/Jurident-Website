@@ -6,9 +6,9 @@ import Profile from "./Profile";
 function TermsAndCondition() {
   return (
     <Layout className="md:mx-260 mx-25">
-      <div className="flex flex-col justify-center md:flex-row gap-12">
+      <div className="flex flex-col mt-6 justify-center md:flex-row">
         <Profile />
-        <div className="md:w-[650px]  md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
+        <div className="md:w-[650px] ml-5 md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
           <h1 className="font-bold text-lg md:text-xl ml-4 mt-4">
             Terms & Conditions
           </h1>

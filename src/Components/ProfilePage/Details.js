@@ -31,13 +31,13 @@ const Details = () => {
 
   return (
     <Layout className="md:mx-[260px] mx-[25px]">
-      <div className=" flex flex-col md:flex-row gap-12 justify-center pt-6">
+      <div className=" flex flex-col md:flex-row justify-center pt-6">
         <Profile />
-        <div className=" md:w-[650px]  md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
-          <h1 className=" font-bold text-lg ml-[40px] mt-[12px]">
+        <div className="md:w-[650px] ml-5 md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 mt-[90px] rounded-xl border-2 border-orange-300 ">
+          <h1 className="text-black font-bold text-lg ml-[40px] mt-[12px]">
             Profile {">"} Home
           </h1>
-          <div className="  md:w-[570px] md:h-[610px] w-[310px] h-[710px] ml-[40px] text-sm">
+          <div className=" text-black md:w-[570px] md:h-[610px] w-[310px] h-[710px] ml-[40px] text-sm">
             <div className="w-full h-[100px] mt-[20px] ">
               <h1>LAWYER NAME</h1>
               <input
