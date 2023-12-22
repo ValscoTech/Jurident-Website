@@ -1,19 +1,6 @@
-body{
-    overflow-x: hidden;
-}
 
-@media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-  
-  .btn1{
-    width: 100%;
-  }
- 
 
-  
-}
+
 
 .title{
     font-family: 'Satoshi';
@@ -97,3 +84,32 @@ body{
         flex-direction: row;
     }
 
+    @media (max-width: 767px) {
+  
+  
+        .form{
+            width: 80%;
+        }
+     
+    
+      .map{
+        visibility: hidden;
+        
+        height: 10px;
+        width: 10px;
+      }
+
+
+    
+      .container{
+    
+         
+        margin-top: 4px;
+        margin-left: 0%;
+        margin-right: 0%;
+
+        padding: 4px 24px;
+    }
+    
+      
+    }
