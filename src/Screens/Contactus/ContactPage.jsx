@@ -43,7 +43,7 @@ function ContactPage() {
 
   return (
     <Layout className="container1" style={{ width: "100%" }}>
-      <div style={{ width: "125%" }}>
+      <div >
         <h1 className="container title mt-10">CONTACT US </h1>
         <div className="container " style={{ width: "100%" }} >
           <div className="text" style={{ width: "80%", color:"black" }}>

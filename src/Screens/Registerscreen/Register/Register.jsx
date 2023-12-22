@@ -8,10 +8,18 @@ import Layout from "../../Layout";
 
 const Register = () => {
   return (
-    <Layout id="main">
+    <div>
+    <div id="main">
      <RegistrationForm/>
      <RegistrationInfo/>
-    </Layout>
+
+   
+    </div>
+    <Layout/>
+
+    </div>
+    
+
   );
 };
 

@@ -1,4 +1,7 @@
 
+
+
+
 .app-container {
   display: flex;
   justify-content: center;
@@ -13,52 +16,44 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
-
-
-}
-
-.editor-header, .details-header {
-  border-bottom: 1px solid #C99F49;
-  padding: 16px;
-  background: #F6F6F6;
 }
 
 .editor-container {
-  flex: 3;
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
 
 .details-container {
-  flex: 1;
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
 
-.save-button {
-  background-color: #C99F49;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-.react-quill {
-  height: 300px;
-  color: #C99F49;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .app-container {
-    flex-direction: column;
+  
+  .save-button {
+    background-color: #C99F49;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 4px;
+    cursor: pointer;
   }
-
-  .editor-container, .details-container {
-    width: 100%;
-    margin-bottom: 20px;
+  
+  
+  .react-quill {
+    height: 300px;
+    color: #C99F49;
   }
-}
+  
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+  
+    .editor-container, .details-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

@@ -7,10 +7,14 @@ import Layout from "../../Layout";
 
 const Login = () => {
   return (
-    <Layout id="main">
+    <div>
+    <div id="main">
       <LoginForm />
       <LoginInfo />
-    </Layout>
+    
+      </div>
+      <Layout/>
+    </div>
   );
 };
 

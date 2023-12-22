@@ -17,7 +17,7 @@ const LoginInfo = () => {
     }, 5000);
   }, [currIndex]);
   return (
-    <Layout id="info">
+    <div id="info">
       <div id="login-img" className="bg-transparent relative">
         <img
           className="absolute w-11/12 h-full object-none"
@@ -33,7 +33,7 @@ const LoginInfo = () => {
         Ensure that your schedule is accurate by entering new appointments or
         events into our digital calender
       </p>
-    </Layout>
+    </div>
   );
 };
 

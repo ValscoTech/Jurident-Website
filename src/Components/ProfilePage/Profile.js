@@ -8,7 +8,7 @@ const Profile = () => {
         <h1 className="text-4xl font-semibold text-gray-600 mb-8 md:text-left text-center">
           PROFILE
         </h1>
-        <div className="bg-gray-100 rounded-xl border-2 border-orange-300 p-6">
+        <div className=" flex flex-col md:flex-row gap-11 justify-center pt-6">
           <div className="flex items-center justify-center">
             <div className="w-36 h-36 border-4 border-orange-300 rounded-full flex items-center justify-center">
               <img

@@ -54,7 +54,7 @@ const FirstPage = () => {
               {/* Replace 'Video' with your video source */}
               <source src={Video} type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-blue-900 opacity-60 z-10"></div>
+            <div className="absolute inset-0  opacity-60 z-10"></div>
           </div>
         </div>
       </div>
