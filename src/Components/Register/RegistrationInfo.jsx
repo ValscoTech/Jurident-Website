@@ -2,6 +2,7 @@ import React from "react";
 import loginImg1 from "../../Assets/Login/Login-1.png";
 import loginImg2 from "../../Assets/Login/Login-2.png";
 import loginImg3 from "../../Assets/Login/Login-3.png";
+import Layout from "../../Screens/Layout";
 
 const LoginInfo = () => {
   const imgShow = [loginImg1, loginImg2, loginImg3];
@@ -16,7 +17,7 @@ const LoginInfo = () => {
     }, 5000);
   }, [currIndex]);
   return (
-    <div id="info">
+    <Layout id="info">
       <div id="login-img" className="bg-transparent relative">
         <img
           className="absolute w-11/12 h-full object-none"
@@ -32,7 +33,7 @@ const LoginInfo = () => {
         Ensure that your schedule is accurate by entering new appointments or
         events into our digital calender
       </p>
-    </div>
+    </Layout>
   );
 };
 
