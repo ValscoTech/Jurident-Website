@@ -11,7 +11,8 @@ input[type="date"],
 select {
   /* font-size: 10px; */
   border: 2px solid #222020;
-  border-radius: 5px; /* Add border radius for rounded edges */
+  border-radius: 5px;
+  /* Add border radius for rounded edges */
   padding: 2px;
   width: 100%;
 }
@@ -24,13 +25,15 @@ select {
 
 .form-container {
   display: flex;
-  flex-direction: column; /* Change flex direction to column for smaller screens */
+  flex-direction: column;
+  /* Change flex direction to column for smaller screens */
   padding: 20px;
 }
 
 .firsthalf,
 .firsthalf2 {
-  width: 100%; /* Take full width on smaller screens */
+  width: 100%;
+  /* Take full width on smaller screens */
   padding: 20px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
@@ -39,7 +42,8 @@ select {
 
 .hhh {
   text-align: center;
-  margin-bottom: 20px; /* Add some space below the h1 element */
+  margin-bottom: 20px;
+  /* Add some space below the h1 element */
 }
 
 .custom-button {
@@ -55,20 +59,26 @@ select {
 }
 
 .custom-button:hover {
-  background-color: #d58d8d;
+  background-color: transparent;
+  border: 2px solid #C99F4A;
+  color: #C99F4A;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 786px) {
   .form-container {
-    flex-direction: row; /* Revert to row layout for larger screens */
+    flex-direction: row;
+    /* Revert to row layout for larger screens */
   }
 
   .firsthalf,
   .firsthalf2 {
-    width: 48%; /* Adjust the width for larger screens */
+    width: 48%;
+    /* Adjust the width for larger screens */
   }
 
   .firsthalf {
-    margin-right: 2%; /* Add margin between the two halves */
+    margin-right: 2%;
+    /* Add margin between the two halves */
   }
 }

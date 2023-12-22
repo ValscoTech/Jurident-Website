@@ -107,14 +107,17 @@
   }
 
   a:hover {
-    color: #000000ac;
+    color: #C99F4A;
+    font-weight: 700;
   }
 
   .custom-scroll-padding {
     overflow-x: auto;
-    padding-top: 0; /* Add your desired padding value */
+    padding-top: 0;
+    /* Add your desired padding value */
     overflow-x: auto;
-    margin-left: 5px; /* Add your desired margin value */
+    margin-left: 5px;
+    /* Add your desired margin value */
   }
 
   .custom-gap-4 {
@@ -259,9 +262,11 @@
 
   .custom-scroll-padding {
     overflow-x: auto;
-    padding-top: 0; /* Add your desired padding value */
+    padding-top: 0;
+    /* Add your desired padding value */
     overflow-x: auto;
-    margin-left: 5px; /* Add your desired margin value */
+    margin-left: 5px;
+    /* Add your desired margin value */
   }
 
   .custom-gap-4 {
@@ -406,9 +411,11 @@
 
   .custom-scroll-padding {
     overflow-x: auto;
-    padding-top: 0; /* Add your desired padding value */
+    padding-top: 0;
+    /* Add your desired padding value */
     overflow-x: auto;
-    margin-left: 5px; /* Add your desired margin value */
+    margin-left: 5px;
+    /* Add your desired margin value */
   }
 
   .custom-gap-4 {

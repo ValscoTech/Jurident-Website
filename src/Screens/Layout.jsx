@@ -3,8 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout" style={{ height: "100vh" }}>
-      
+    <div className="layout">
       <div>{children}</div>
       <Footer />
     </div>
