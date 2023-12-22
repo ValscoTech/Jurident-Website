@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
     <div>
   
 
-    <div className=" label w-[100%] dark:text-white">
-    <p className="PRIVACY-POLICY-last">
+    <div className="  label w-[100%] dark:text-white">
+    <p className="PRIVACY-POLICY">
       <h1>PRIVACY POLICY</h1>  
         <br />
         Last updated December 20, 2023
