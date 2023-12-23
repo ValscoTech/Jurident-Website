@@ -14,7 +14,6 @@ import vector from "../../Assets/HomePage/Vector.svg";
 
 const Hero2 = () => {
   const [windowWidth, setWindowWidth] = useState(0);
-  const [imageToShow, setImageToShow] = useState("");
 
   useEffect(() => {
     const handleResize = () => {
@@ -129,7 +128,7 @@ const Hero2 = () => {
 
       {/* lawyer images and text area  */}
 
-      <div className="font-poppins flex flex-col md:flex-row flex-wrap px-12">
+      <div className="font-poppins justify-center flex flex-col md:flex-row flex-wrap px-2">
         {/* 1st */}
         <div className="flex flex-wrap justify-center flex-row max-w-screen">
           <div className="rounded-[2.7rem] py-6 pl-1">
