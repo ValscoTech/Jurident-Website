@@ -60,7 +60,7 @@ function ContactPage() {
           </button>
           <button
             type="button"
-            class="btn1 inline-flex items-center justify-evenly sm:w-1/2 md:w-72 mt-6 md:ml-12 text-white bg-yellow-600 hover:bg-yellow-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-700 dark:border-gray-700"
+            class="btn1 inline-flex items-center justify-evenly sm:w-1/2 md:w-72 mt-6  text-white bg-yellow-600 hover:bg-yellow-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-700 dark:border-gray-700"
           >
             <FiPhone></FiPhone>VIA CALL
           </button>
@@ -176,18 +176,18 @@ function ContactPage() {
               </div>
               <button
                 type="button"
-                className="text-white bg-yellow-600 hover:bg-yellow-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-700 dark:border-yellow-700"
+                className="text-white bg-yellow hover:bg-yellow focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-700 dark:border-yellow-700"
               >
                 SUBMIT
               </button>
             </form>
             <div
               className="mb-2 group map"
-              style={{ width: "40%", height: "60px" }}
+              style={{ width: "70%", height: "60px" }}
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119150.55857764366!2d79.07185615537055!3d12.925560220092514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad38e61fa68ffb%3A0xbedda6917d262b5e!2sVellore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1688713043344!5m2!1sen!2sin"
-                width="200%"
+                width="140%"
                 height="800%"
                 style={{ border: "0", margin: "20px" }}
               ></iframe>

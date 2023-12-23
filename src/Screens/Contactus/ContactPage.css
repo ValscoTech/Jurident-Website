@@ -27,10 +27,7 @@
   margin-top: 40px;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-}
+
 
 .countp {
   display: flex;
@@ -50,14 +47,7 @@
   border-color: #000000;
 }
 
-.btn {
-  display: flex;
-  width: 20%;
-  justify-content: center;
-}
-.btn2 {
-  width: 45%;
-}
+
 
 .container {
   margin-top: 4px;

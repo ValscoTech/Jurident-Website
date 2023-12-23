@@ -1,0 +1,11 @@
+/* dt.css */
+
+@media (max-width: 768px) {
+    /* Tab and mobile styles */
+    .md:flex-row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Add more media queries as needed for different screen sizes */
+  

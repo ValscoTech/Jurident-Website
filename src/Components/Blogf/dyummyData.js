@@ -84,21 +84,7 @@ export const TrendingData = [
     timing: "5 min read",
     date: "May 23",
   },
-  {
-    topic: "fifth-blog",
-    id: "05",
-    heading: "George in Lorem Blog",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    timing: "5 min read",
-    date: "May 23",
-  },
-  {
-    id: "06",
-    heading: "George in Lorem Blog",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    timing: "5 min read",
-    date: "May 23",
-  },
+  
 ];
 
 export const Content = [
