@@ -84,14 +84,14 @@ const RegistrationForm = () => {
           className="googleLog bg-slate-50 dark:text-black flex items-center justify-center gap-3"
           onClick={signInWithGoogle}
         >
-          <FcGoogle /> <span>Continue with Google</span>
+          <FcGoogle /> <span> Google</span>
         </button>
         <button
           className="facebookLog flex items-center justify-center gap-3"
           onClick={signInWithFB}
         >
           <RiFacebookCircleFill />
-          <span>Continue with Facebook</span>
+          <span> Facebook</span>
         </button>
         <div id="seperator" className="mb-4">
           <div className="h-1 w-1/2 bg-black dark:bg-white mt-[12px] mr-[15px]"></div>

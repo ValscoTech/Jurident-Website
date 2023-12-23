@@ -176,14 +176,14 @@ const LoginForm = () => {
           className="googleLog bg-slate-50 dark:text-black flex items-center justify-center gap-3"
           onClick={signInWithGoogle}
         >
-          <FcGoogle /> <span>Continue with Google</span>
+          <FcGoogle /> <span> Google</span>
         </button>
         <button
           className="facebookLog flex items-center justify-center gap-3"
           onClick={signInWithFB}
         >
           <RiFacebookCircleFill />
-          <span>Continue with Facebook</span>
+          <span> Facebook</span>
         </button>
       </form>
     </>
