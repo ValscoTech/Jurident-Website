@@ -6,14 +6,14 @@ import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
   const navigate = useNavigate();
   return (
-    <Layout className="md:mx-[260px] text-black mx-[25px]">
-      <div className="flex flex-col justify-center md:flex-row mt-6">
+    <Layout className="xl:mx-[260px] text-black mx-[25px] ">
+      <div className="flex flex-col justify-center xl:flex-row md:flex-row mt-6">
         <Profile />
-        <div className="md:w-[650px] ml-5 md:h-[700px] w-[380px] h-[800px] mr-[15px] md:mr-[0px] bg-slate-100 dark:bg-transparent mt-[90px] rounded-xl border-2 border-orange-300 ">
-          <h1 className="font-bold text-lg md:text-xl ml-4 mt-4">About Us</h1>
+        <div className="xl:w-[650px] ml-5 xl:h-[700px] w-[380px] h-[800px] mr-[15px] xl:mr-[0px] bg-slate-100 dark:bg-transparent mt-[90px] rounded-xl border-2 border-orange-300 ">
+          <h1 className="font-bold text-xl xl:text-xl ml-4 mt-4">About Us</h1>
           <div className="mt-4 ml-4 mr-6  dark:text-white">
             <div>
-              <h1 className="font-semibold text-lg md:text-xl text-[#CFA95E]">
+              <h1 className="font-semibold text-xl xl:text-xl text-[#CFA95E]">
                 Name
               </h1>
               <div className="mt-2">
@@ -21,7 +21,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="mt-6 dark:text-white">
-              <h1 className="font-semibold text-lg md:text-xl text-[#CFA95E]">
+              <h1 className="font-semibold text-xl xl:text-xl text-[#CFA95E]">
                 Lawyer Id
               </h1>
               <div className="mt-2 flex flex-col gap-4">
@@ -29,7 +29,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="mt-6 dark:text-white">
-              <h1 className="font-semibold text-lg md:text-xl text-[#CFA95E]">
+              <h1 className="font-semibold text-xl xl:text-xl text-[#CFA95E]">
                 Degree
               </h1>
               <div className="mt-2 flex flex-col gap-4">
@@ -37,7 +37,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="mt-6 dark:text-white">
-              <h1 className="font-semibold text-lg md:text-xl text-[#CFA95E]">
+              <h1 className="font-semibold text-xl xl:text-xl text-[#CFA95E]">
                 Email id
               </h1>
               <div className="mt-2 flex flex-col gap-4 dark:text-white">
@@ -45,7 +45,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="mt-6 dark:text-white">
-              <h1 className="font-semibold text-lg md:text-xl text-[#CFA95E]">
+              <h1 className="font-semibold text-xl xl:text-xl text-[#CFA95E]">
                 Phone No
               </h1>
               <div className="mt-2 flex flex-col gap-4">
