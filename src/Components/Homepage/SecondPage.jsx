@@ -7,11 +7,12 @@ import { GoArrowDownRight } from "react-icons/go";
 const SecondPage = () => {
   return (
     <div
-      className="flex flex-col gap-11 lg:m-8 p-2 lg:p-[2rem] overflow-hidden justify-center h-screen bg-no-repeat bg-cover -z-10 relative"
+      className="flex flex-col gap-11 lg:m-8 lg:p-[2rem] overflow-hidden justify-center h-screen bg-no-repeat bg-cover -z-10 relative"
       style={{
         backgroundImage: `url(${BG_RIBBON})`,
       }}
-    >
+    > 
+    <div className="w-full p-16 pr-28  flex justify-center">
       <div className="relative grid grid-cols-2 ">
         <div className=" flex flex-col gap-10 max-lg:gap-5  relative">
           <div className="flex flex-col justify-center align-middle relative">
@@ -55,9 +56,10 @@ const SecondPage = () => {
           <img
             src={BG_MAN}
             alt="bgman"
-            className="absolute sm:h-[300px] lg:h-[600px] bottom-[-30px] lg:left-14 -z-1"
+            className="absolute sm:h-[300px] lg:h-[600px] bottom-[-30px] lg:left-14 -z-1 pr-2"
           />
         </div>
+        
 
         <button
           type="button"
@@ -70,6 +72,7 @@ const SecondPage = () => {
           </span>
         </button>
       </div>
+    </div>
     </div>
   );
 };

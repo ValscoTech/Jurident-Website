@@ -16,6 +16,9 @@ const FirstPage = () => {
   }, [screenSize]);
   if (screenSize > 900) {
     return (
+      
+      <div className="w-full p-4  flex justify-center">
+
       <div className="relative ml-8 min-h-screen overflow-hidden w-full max-w-screen-xl flex flex-col md:flex-row ">
         {/* Left section */}
         <div className="relative flex flex-col justify-center left-[-2rem] mr-[20rem] items-start md:items-center  py-12 md:py-0 px-6 md:px-12 lg:px-24">
@@ -48,8 +51,11 @@ const FirstPage = () => {
         </div>
 
         {/* Right section */}
+        
         <div className="absolute inset-0 w-[100%] md:w-1/2 z-0 top-10 lg:left-[33rem] md:left-[25rem] md:top-[1rem] lg:top-10">
-          <div className="relative rounded-lg md:w-[400px] md:h-[600px]  lg:w-[700px] lg:h-[700px] sm:h-[100px]">
+        <div className="w-full lg:w-[80%] md:w-[80%] pl-20.5 ml-25 rounded-lg flex flex-col items-center">
+          <div className="relative rounded-lg md:w-[400px] md:h-[600px]  lg:w-[700px] lg:h-[700px] sm:h-[100px] ">
+            
             <video
               autoPlay
               loop
@@ -64,6 +70,9 @@ const FirstPage = () => {
           </div>
         </div>
       </div>
+      </div>
+       </div>
+      
     );
   } else {
     return (

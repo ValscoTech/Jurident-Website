@@ -31,6 +31,7 @@ const Hero2 = () => {
   }, []);
   return (
     <>
+    <div className="w-full p-16 pr-28  flex justify-center">
       <div
         className="flex flex-col gap-11 justify-center font-poppins bg-no-repeat bg-cover relative"
         style={{
@@ -128,7 +129,7 @@ const Hero2 = () => {
 
       {/* lawyer images and text area  */}
 
-      
+      </div>
     </>
   );
 };
