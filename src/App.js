@@ -30,7 +30,17 @@ const App = () => {
     <Router>
     <Navbar/>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+   
+
+        <Route exact path="/" element={
+        <div className="w-full p-16 pr-28 ml-5 flex justify-center">
+         
+        <HomePage />
+        </div>
+  
+      } />
+    
+
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
         <Route path="/Profile" element={<Details />} />
