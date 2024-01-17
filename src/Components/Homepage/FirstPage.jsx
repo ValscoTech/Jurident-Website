@@ -29,15 +29,16 @@ const FirstPage = () => {
               Protecting Rights
             </h2>
           </div>
-          <div className="p-4 flex flex-col md:flex-row items-center mt-12 md:mt-24 relative z-10 border rounded-full  bg-bg-loc_sec bg-[#17A1FA] ">
+          <div className="p-5 flex flex-col md:flex-row items-center mt-12 md:mt-24 relative z-10 border rounded-full  bg-bg-loc_sec bg-[#17A1FA] ">
             <div className="flex items-center mb-4 md:mb-0">
-              <SlLocationPin className="text-white text-3xl" />
+              <SlLocationPin className="text-white text-3xl cursor-pointer" />
               <h3 className="ml-4 md:ml-6 font-poppins underline text-white text-xl md:text-3xl font-medium">
                 <input
                   type="text"
                   placeholder="Search for a City"
                   id="home"
-                  className="w-[215px] bg-transparent text-white placeholder-white border-b focus:outline-none md:text-[20px] !important"
+                  // className="w-[215px] bg-transparent text-white placeholder-white border-b focus:outline-none md:text-[20px] !important"
+                  className="peer w-full h-full bg-transparent text-white font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-white placeholder-shown:border-t-white border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-white focus:border-white-500"
                 />
               </h3>
             </div>
@@ -94,9 +95,11 @@ const FirstPage = () => {
             {/* Replace 'Video' with your video source */}
             <source src={Video} type="video/mp4" />
           </video>
-          <div className="absolute inset-0 
+          <div
+            className="absolute inset-0 
           
-          opacity-60 z-10"></div>
+          opacity-60 z-10"
+          ></div>
         </div>
 
         <div className="relative w-full sm:w-1/2">
@@ -123,4 +126,3 @@ const FirstPage = () => {
 };
 
 export default FirstPage;
-
