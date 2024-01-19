@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-2 border border-white-3600"></div>
-        <div className="text-2xl flex p-3 justify-between">
+        <div className="text-lg flex p-3 justify-between">
           <h3 className="font-light">Copyrights</h3>
           <h3>India</h3>
         </div>
