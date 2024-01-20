@@ -29,16 +29,11 @@ const App = () => {
   return (
     <Router>
     <Navbar/>
+    <div className="w-full pl-7 pr-28 ml-5 flex justify-center">
       <Routes>
    
-
-        <Route exact path="/" element={
-        <div className="w-full p-16 pr-28 ml-5 flex justify-center">
-         
-        <HomePage />
-        </div>
-  
-      } />
+      
+        <Route exact path="/" element={<HomePage />} />
     
 
         <Route exact path="/login" element={<Login />} />
@@ -56,7 +51,9 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/> } />
         <Route path="/contact" element={<ContactPage />} />
+ 
       </Routes>
+      </div>
     </Router>
   );
 };
