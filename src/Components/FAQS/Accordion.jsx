@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { HiChevronDown } from "react-icons/hi";
-import { HiChevronUp } from "react-icons/hi";
+import { FaChevronCircleDown } from "react-icons/fa";
+import { FaChevronCircleUp } from "react-icons/fa";
 
 const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
@@ -10,7 +10,7 @@ const Accordion = ({ title, content }) => {
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
         <div>{title}</div>
         <div className="icons">
-          {isActive ? <HiChevronUp /> : <HiChevronDown />}
+          {isActive ? <FaChevronCircleUp /> : <FaChevronCircleDown />}
         </div>
       </div>
       {isActive && <div className="accordion-content">{content}</div>}
